@@ -26,7 +26,7 @@ app.use(bodyParser.json())
 app.use('/api/v1/score', golfscoreRoutes)
 
 if(process.env.NODE_ENV === 'production') {
-  const appPath = path.join(__dirname, '..', 'dist', 'my-app')
+  const appPath = path.join(__dirname, '..', 'dist', 'golfscore-web-app')
   app.use(express.static(appPath))
   app.get('*', function(req, res) {
     res.sendFile(path.resolve(appPath, 'index.html'))
