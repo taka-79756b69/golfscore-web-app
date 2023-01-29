@@ -225,6 +225,7 @@ export class ScorelistComponent {
   }
 
   save() {
+
     // changes.prop contains the old and the new value...
     this.outTotal1 = this.setOutTotal1()
     this.inTotal1 = this.setInTotal1()
@@ -905,6 +906,9 @@ export class ScorelistComponent {
 
   //スコア保存
   onSubmit() {
+
+    alert("保存を開始します。「保存完了」が表示されるまで待ってください。")
+
     // リクエスト送信用にJSON作成
     this.checkoutForm = ({
       name1: this.score.name1,
@@ -1244,15 +1248,13 @@ export class ScorelistComponent {
       scoreObservable.subscribe(
         (data)=>{
           this.score = data
-          //console.log('got data: '+ data)
         },
         (err)=>{
           console.log('got err: '+ err)
         },
         ()=>{
           this.ngOnInit()
-          alert("保存完了")
-          //console.log('complete!')
+          alert("「保存完了」しました。")
         }
       )
     })
