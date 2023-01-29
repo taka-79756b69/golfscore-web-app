@@ -7,6 +7,8 @@ import { ScorelistComponent } from './scorelist/scorelist.component';
 import { ScorelisttopComponent } from './scorelisttop/scorelisttop.component';
 import { ScoreService } from '../common/service/score.service';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
+import { MatSnackBarModule } from '@angular/material/snack-bar'
 
 const routes: Routes = [
   {
@@ -25,14 +27,16 @@ const routes: Routes = [
   declarations: [
     ScoreComponent,
     ScorelistComponent,
-    ScorelisttopComponent
+    ScorelisttopComponent,
   ],
   imports: [
     RouterModule.forChild(routes),
     BrowserModule,
     FormsModule,
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatProgressSpinnerModule,
+    MatSnackBarModule
   ],
   providers: [
     ScoreService
