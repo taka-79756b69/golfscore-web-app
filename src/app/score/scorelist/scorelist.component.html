@@ -546,44 +546,68 @@
         <div class="col-4 text-center align-self-center bg-secondary text-white">
           {{ score.name1 }}
         </div>
-        <div class="col-4 text-end">
+        <div class="col-2 text-end">
           {{ olympicTotal1 }}
         </div>
-        <div class="col-4 text-end">
+        <div class="col-2 text-end">
+          ( {{ olympicTotal1_rated }} )
+        </div>
+        <div class="col-2 text-end">
           {{ lasvegasTotal1 }}
+        </div>
+        <div class="col-2 text-end">
+          ( {{ lasvegasTotal1_rated }} )
         </div>
       </div>
       <div class="row">
         <div class="col-4 text-center bg-secondary text-white">
           {{ score.name2 }}
         </div>
-        <div class="col-4 text-end">
+        <div class="col-2 text-end">
           {{ olympicTotal2 }}
         </div>
-        <div class="col-4 text-end">
+        <div class="col-2 text-end">
+          ( {{ olympicTotal2_rated }} )
+        </div>
+        <div class="col-2 text-end">
           {{ lasvegasTotal2 }}
+        </div>
+        <div class="col-2 text-end">
+          ( {{ lasvegasTotal2_rated }} )
         </div>
       </div>
       <div class="row">
         <div class="col-4 text-center bg-secondary text-white">
           {{ score.name3 }}
         </div>
-        <div class="col-4 text-end">
+        <div class="col-2 text-end">
           {{ olympicTotal3 }}
         </div>
-        <div class="col-4 text-end">
+        <div class="col-2 text-end">
+          ( {{ olympicTotal3_rated }} )
+        </div>
+        <div class="col-2 text-end">
           {{ lasvegasTotal3 }}
+        </div>
+        <div class="col-2 text-end">
+          ( {{ lasvegasTotal3_rated }} )
         </div>
       </div>
       <div class="row">
         <div class="col-4 text-center bg-secondary text-white">
           {{ score.name4 }}
         </div>
-        <div class="col-4 text-end">
+        <div class="col-2 text-end">
           {{ olympicTotal4 }}
         </div>
-        <div class="col-4 text-end">
+        <div class="col-2 text-end">
+          ( {{ olympicTotal4_rated }} )
+        </div>
+        <div class="col-2 text-end">
           {{ lasvegasTotal4 }}
+        </div>
+        <div class="col-2 text-end">
+          ( {{ lasvegasTotal4_rated }} )
         </div>
       </div>
       <div class="row mb-4">
@@ -591,10 +615,16 @@
           レート
         </div>
         <div class="col-4 text-end">
-          <input type="number" class="form-control form-control-sm" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          <input #box1 type="number" class="form-control form-control-sm" placeholder="レート"
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+            (change)="olympicRateChange(box1.value)"
+            >
         </div>
         <div class="col-4 text-end">
-          <input type="number" class="form-control form-control-sm" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          <input #box2 type="number" class="form-control form-control-sm" placeholder="レート"
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+            (change)="lasvegasRateChange(box2.value)"
+            >
         </div>
       </div>
       <br>

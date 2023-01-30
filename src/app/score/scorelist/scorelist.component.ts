@@ -11,10 +11,20 @@ import { ScoreService } from 'src/app/common/service/score.service';
 })
 export class ScorelistComponent {
 
+  //DBから取得した値のかたまり
   score: any
+
+  //コース番号（使ってないかも）
   courseIndex: any
+
+  //フォームデータ
   checkoutForm: any
 
+  //レート
+  olympicRate: any
+  lasvegasRate: any
+
+  //保存ダイアログ用のフラグ
   saving: any
 
   //OUTTOTAL
@@ -41,11 +51,21 @@ export class ScorelistComponent {
   olympicTotal3: any
   olympicTotal4: any
 
+  olympicTotal1_rated = 0
+  olympicTotal2_rated = 0
+  olympicTotal3_rated = 0
+  olympicTotal4_rated = 0
+
   //LASVEGAS
   lasvegasTotal1 = 0
   lasvegasTotal2 = 0
   lasvegasTotal3 = 0
   lasvegasTotal4 = 0
+
+  lasvegasTotal1_rated = 0
+  lasvegasTotal2_rated = 0
+  lasvegasTotal3_rated = 0
+  lasvegasTotal4_rated = 0
 
   //ドロップダウンのモデル
   dropDown1_1: any
@@ -2296,4 +2316,20 @@ export class ScorelistComponent {
       this.score.course18_score4++
   }
 
+  olympicRateChange(val: any) {
+
+    this.olympicTotal1_rated = this.olympicTotal1 * val
+    this.olympicTotal2_rated = this.olympicTotal2 * val
+    this.olympicTotal3_rated = this.olympicTotal3 * val
+    this.olympicTotal4_rated = this.olympicTotal4 * val
+  }
+
+  lasvegasRateChange(val: any) {
+
+    this.lasvegasTotal1_rated = this.lasvegasTotal1 * val
+    this.lasvegasTotal2_rated = this.lasvegasTotal2 * val
+    this.lasvegasTotal3_rated = this.lasvegasTotal3 * val
+    this.lasvegasTotal4_rated = this.lasvegasTotal4 * val
+
+  }
 }
