@@ -5421,23 +5421,32 @@
   </div>
 
   <!-- course18のダイアログ -->
-  <div class="modal fade" id="saveDialog" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal fade" id="saveDialog" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
       <div class="modal-content">
-        <div class="container">
-          <div class="row">
-            <div *ngIf="saving; else elseContent">保存中です。。。
+        <div class="modal-body">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-9 text-center">
+                <div *ngIf="saving; else elseContent">
+                  <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+                <ng-template #elseContent>
+                  <h3>保存が完了しました。</h3>
+                </ng-template>
+              </div>
             </div>
-            <ng-template #elseContent>
-              <h3>保存が完了しました。</h3>
-          </ng-template>
           </div>
         </div>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-4">
-              <div class="d-grid">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">閉じる</button>
+        <div class="modal-footer">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-9">
+                <div class="d-grid">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">閉じる</button>
+                </div>
               </div>
             </div>
           </div>
