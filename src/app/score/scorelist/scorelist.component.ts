@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { withLatestFrom } from 'rxjs';
 import { ScoreService } from 'src/app/common/service/score.service';
 
 @Component({
@@ -13,6 +14,8 @@ export class ScorelistComponent {
   score: any
   courseIndex: any
   checkoutForm: any
+
+  saving: any
 
   //OUTTOTAL
   outTotal1: any
@@ -907,7 +910,8 @@ export class ScorelistComponent {
   //スコア保存
   onSubmit() {
 
-    alert("保存を開始します。「保存完了」が表示されるまで待ってください。")
+    //alert("保存を開始します。「保存完了」が表示されるまで待ってください。")
+    this.saving = true
 
     // リクエスト送信用にJSON作成
     this.checkoutForm = ({
@@ -1253,8 +1257,9 @@ export class ScorelistComponent {
           console.log('got err: '+ err)
         },
         ()=>{
+          this.saving = false
           this.ngOnInit()
-          alert("「保存完了」しました。")
+          //alert("「保存完了」しました。")
         }
       )
     })
