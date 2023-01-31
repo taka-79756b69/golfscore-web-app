@@ -68,78 +68,99 @@ export class ScorelistComponent {
   lasvegasTotal4_rated = 0
 
   //オーダーバッジ
-  course1_order1: any
-  course1_order2: any
-  course1_order3: any
-  course1_order4: any
-  course2_order1: any
-  course2_order2: any
-  course2_order3: any
-  course2_order4: any
-  course3_order1: any
-  course3_order2: any
-  course3_order3: any
-  course3_order4: any
-  course4_order1: any
-  course4_order2: any
-  course4_order3: any
-  course4_order4: any
-  course5_order1: any
-  course5_order2: any
-  course5_order3: any
-  course5_order4: any
-  course6_order1: any
-  course6_order2: any
-  course6_order3: any
-  course6_order4: any
-  course7_order1: any
-  course7_order2: any
-  course7_order3: any
-  course7_order4: any
-  course8_order1: any
-  course8_order2: any
-  course8_order3: any
-  course8_order4: any
-  course9_order1: any
-  course9_order2: any
-  course9_order3: any
-  course9_order4: any
-  course10_order1: any
-  course10_order2: any
-  course10_order3: any
-  course10_order4: any
-  course11_order1: any
-  course11_order2: any
-  course11_order3: any
-  course11_order4: any
-  course12_order1: any
-  course12_order2: any
-  course12_order3: any
-  course12_order4: any
-  course13_order1: any
-  course13_order2: any
-  course13_order3: any
-  course13_order4: any
-  course14_order1: any
-  course14_order2: any
-  course14_order3: any
-  course14_order4: any
-  course15_order1: any
-  course15_order2: any
-  course15_order3: any
-  course15_order4: any
-  course16_order1: any
-  course16_order2: any
-  course16_order3: any
-  course16_order4: any
-  course17_order1: any
-  course17_order2: any
-  course17_order3: any
-  course17_order4: any
-  course18_order1: any
-  course18_order2: any
-  course18_order3: any
-  course18_order4: any
+  order = [
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+  ];
+
+  course1_order1 = 0
+  course1_order2 = 0
+  course1_order3 = 0
+  course1_order4 = 0
+  course2_order1 = 0
+  course2_order2 = 0
+  course2_order3 = 0
+  course2_order4 = 0
+  course3_order1 = 0
+  course3_order2 = 0
+  course3_order3 = 0
+  course3_order4 = 0
+  course4_order1 = 0
+  course4_order2 = 0
+  course4_order3 = 0
+  course4_order4 = 0
+  course5_order1 = 0
+  course5_order2 = 0
+  course5_order3 = 0
+  course5_order4 = 0
+  course6_order1 = 0
+  course6_order2 = 0
+  course6_order3 = 0
+  course6_order4 = 0
+  course7_order1 = 0
+  course7_order2 = 0
+  course7_order3 = 0
+  course7_order4 = 0
+  course8_order1 = 0
+  course8_order2 = 0
+  course8_order3 = 0
+  course8_order4 = 0
+  course9_order1 = 0
+  course9_order2 = 0
+  course9_order3 = 0
+  course9_order4 = 0
+  course10_order1 = 0
+  course10_order2 = 0
+  course10_order3 = 0
+  course10_order4 = 0
+  course11_order1 = 0
+  course11_order2 = 0
+  course11_order3 = 0
+  course11_order4 = 0
+  course12_order1 = 0
+  course12_order2 = 0
+  course12_order3 = 0
+  course12_order4 = 0
+  course13_order1 = 0
+  course13_order2 = 0
+  course13_order3 = 0
+  course13_order4 = 0
+  course14_order1 = 0
+  course14_order2 = 0
+  course14_order3 = 0
+  course14_order4 = 0
+  course15_order1 = 0
+  course15_order2 = 0
+  course15_order3 = 0
+  course15_order4 = 0
+  course16_order1 = 0
+  course16_order2 = 0
+  course16_order3 = 0
+  course16_order4 = 0
+  course17_order1 = 0
+  course17_order2 = 0
+  course17_order3 = 0
+  course17_order4 = 0
+  course18_order1 = 0
+  course18_order2 = 0
+  course18_order3 = 0
+  course18_order4 = 0
 
   //ドロップダウンのモデル
   dropDown1_1: any
@@ -2633,10 +2654,10 @@ export class ScorelistComponent {
       p4point = 0
 
       if(this.courseIndex == 0){
-        this.course1_order1 = this.order1_1
-        this.course1_order2 = this.order1_2
-        this.course1_order3 = this.order1_3
-        this.course1_order4 = this.order1_4
+        this.order[0][0] = this.order1_1
+        this.order[0][1] = this.order1_2
+        this.order[0][2] = this.order1_3
+        this.order[0][3] = this.order1_4
       }
 
       //先頭からループ
@@ -2645,12 +2666,18 @@ export class ScorelistComponent {
       if(score.score1 == 0 && score.score2 == 0 && score.score3 == 0 && score.score4 == 0){
         //最初のコースの場合、手入力した値をバッジにセット
         if(this.courseIndex == 0){
-          this.course1_order1 = this.order1_1
-          this.course1_order2 = this.order1_2
-          this.course1_order3 = this.order1_3
-          this.course1_order4 = this.order1_4
+          this.order[0][0] = this.order1_1
+          this.order[0][1] = this.order1_2
+          this.order[0][2] = this.order1_3
+          this.order[0][3] = this.order1_4
+
+          //ループを抜ける
+          break
         }else{
           //最初のコース以外の場合、スコアを見て判定する
+          //＋＋＋
+          //全部処理してもいいかも、p1pointが0ならバッジでないので、参加してない人は数字でない
+          //けど比較式に困るか・・・
           //this.setBadge(scores[this.courseIndex], scores[this.courseIndex - 1])
 
           p1point = +scores[this.courseIndex - 1].score1 * 10 + +scores[this.courseIndex - 1].order1
@@ -2658,41 +2685,96 @@ export class ScorelistComponent {
           p3point = +scores[this.courseIndex - 1].score3 * 10 + +scores[this.courseIndex - 1].order3
           p4point = +scores[this.courseIndex - 1].score4 * 10 + +scores[this.courseIndex - 1].order4
 
+          this.setBagdeOrder(this.courseIndex, p1point, p2point, p3point, p4point)
 
-          switch (this.courseIndex) {
-            case 1:
-              if(p1point < p2point){
-                if(p1point < p3point){
-                  if(p1point < p4point){
-                    this.course2_order1 = 1
-                  }
-                }
-              }
-              break;
-            case 2:
-              if(p1point < p2point){
-                if(p1point < p3point){
-                  if(p1point < p4point){
-                    this.course3_order1 = 1
-                  }
-                }
-              }
-              break;
-            case 3:
-              if(p1point < p2point){
-                if(p1point < p3point){
-                  if(p1point < p4point){
-                    this.course4_order1 = 1
-                  }
-                }
-              }
-              break;
-            default:
-              break;
-          }
+          //ループを抜ける
+          break
         }
       }
       this.courseIndex++
+    }
+  }
+
+  setBagdeOrder(trgt:any, p1point:any, p2point:any, p3point:any, p4point:any) {
+
+    //一人目
+    if(p1point < p2point && p1point < p3point && p1point < p4point){
+      this.order[trgt][0] = 1
+    }
+    if(p1point > p2point && p1point > p3point && p1point > p4point){
+      this.order[trgt][0] = 4
+    }
+    if(
+      (p1point > p2point && p1point < p3point && p1point < p4point)
+      ||(p1point > p3point && p1point < p2point && p1point < p4point)
+      ||(p1point > p4point && p1point < p2point && p1point < p3point)){
+        this.order[trgt][0] = 2
+    }
+    if(
+      (p1point < p2point && p1point > p3point && p1point > p4point)
+      ||(p1point < p3point && p1point > p2point && p1point > p4point)
+      ||(p1point < p4point && p1point > p2point && p1point > p3point)){
+        this.order[trgt][0] = 3
+    }
+
+    //二人目
+    if(p2point < p1point && p2point < p3point && p2point < p4point){
+      this.order[trgt][1] = 1
+    }
+    if(p2point > p1point && p2point > p3point && p2point > p4point){
+      this.order[trgt][1] = 4
+    }
+    if(
+      (p2point > p1point && p2point < p3point && p2point < p4point)
+      ||(p2point > p3point && p2point < p1point && p2point < p4point)
+      ||(p2point > p4point && p2point < p1point && p2point < p3point)){
+        this.order[trgt][1] = 2
+    }
+    if(
+      (p2point < p1point && p2point > p3point && p2point > p4point)
+      ||(p2point < p3point && p2point > p1point && p2point > p4point)
+      ||(p2point < p4point && p2point > p1point && p2point > p3point)){
+        this.order[trgt][1] = 3
+    }
+
+    //三人目
+    if(p3point < p1point && p3point < p2point && p3point < p4point){
+      this.order[trgt][2] = 1
+    }
+    if(p3point > p1point && p3point > p2point && p3point > p4point){
+      this.order[trgt][2] = 4
+    }
+    if(
+      (p3point > p1point && p3point < p2point && p3point < p4point)
+      ||(p3point > p2point && p3point < p1point && p3point < p4point)
+      ||(p3point > p4point && p3point < p1point && p3point < p2point)){
+        this.order[trgt][2] = 2
+    }
+    if(
+      (p3point < p1point && p3point > p2point && p3point > p4point)
+      ||(p3point < p2point && p3point > p1point && p3point > p4point)
+      ||(p3point < p4point && p3point > p1point && p3point > p2point)){
+        this.order[trgt][2] = 3
+    }
+
+    //四人目
+    if(p4point < p1point && p4point < p2point && p4point < p3point){
+      this.order[trgt][3] = 1
+    }
+    if(p4point > p1point && p4point > p2point && p4point > p3point){
+      this.order[trgt][3] = 4
+    }
+    if(
+      (p4point > p1point && p4point < p2point && p4point < p3point)
+      ||(p4point > p2point && p4point < p1point && p4point < p3point)
+      ||(p4point > p3point && p4point < p1point && p4point < p2point)){
+        this.order[trgt][3] = 2
+    }
+    if(
+      (p4point < p1point && p4point > p2point && p4point > p3point)
+      ||(p4point < p2point && p4point > p1point && p4point > p3point)
+      ||(p4point < p3point && p4point > p1point && p4point > p2point)){
+        this.order[trgt][3] = 3
     }
   }
 }
