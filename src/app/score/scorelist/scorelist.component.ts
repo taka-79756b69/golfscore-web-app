@@ -868,10 +868,10 @@ export class ScorelistComponent {
     this.dropDown18_2 = this.score.course18_olympic2
     this.dropDown18_3 = this.score.course18_olympic3
     this.dropDown18_4 = this.score.course18_olympic4
-    this.order1_1 = 0
-    this.order1_2 = 0
-    this.order1_3 = 0
-    this.order1_4 = 0
+    this.order1_1 = this.score.course1_order1
+    this.order1_2 = this.score.course1_order2
+    this.order1_3 = this.score.course1_order3
+    this.order1_4 = this.score.course1_order4
 
     //ラジオボタンの初期値セット
     this.radioBtn1_1 = this.score.course1_lasvegas1
@@ -968,6 +968,7 @@ export class ScorelistComponent {
 
     this.setOlympicTotal()
     this.setLasvegasTotal()
+    this.setBadgeOrder()
   }
 
   //スコア合計をセット
@@ -1049,18 +1050,22 @@ export class ScorelistComponent {
       course1_put1: this.score.course1_put1,
       course1_olympic1: this.score.course1_olympic1,
       course1_lasvegas1: this.score.course1_lasvegas1,
+      course1_order1: this.course1_order1,
       course1_score2: this.score.course1_score2,
       course1_put2: this.score.course1_put2,
       course1_olympic2: this.score.course1_olympic2,
       course1_lasvegas2: this.score.course1_lasvegas2,
+      course1_order2: this.course1_order2,
       course1_score3: this.score.course1_score3,
       course1_put3: this.score.course1_put3,
       course1_olympic3: this.score.course1_olympic3,
       course1_lasvegas3: this.score.course1_lasvegas3,
+      course1_order3: this.course1_order3,
       course1_score4: this.score.course1_score4,
       course1_put4: this.score.course1_put4,
       course1_olympic4: this.score.course1_olympic4,
       course1_lasvegas4: this.score.course1_lasvegas4,
+      course1_order4: this.course1_order4,
 
       course2_no: this.score.course2_no,
       course2_score1: this.score.course2_score1,
@@ -2452,49 +2457,34 @@ export class ScorelistComponent {
 
   }
 
+  //打順のバッジを表示する処理
   setBadgeOrder() {
 
     var scores: any
     scores = [
       {
         score1: this.score.course1_score1,
-        order1: this.course1_order1,
         score2: this.score.course1_score2,
-        order2: this.course1_order2,
         score3: this.score.course1_score3,
-        order3: this.course1_order3,
         score4: this.score.course1_score4,
-        order4: this.course1_order4,
       },
       {
         score1: this.score.course2_score1,
-        order1: this.course2_order1,
         score2: this.score.course2_score2,
-        order2: this.course2_order2,
         score3: this.score.course2_score3,
-        order3: this.course2_order3,
         score4: this.score.course2_score4,
-        order4: this.course2_order4,
       },
       {
         score1: this.score.course3_score1,
         score2: this.score.course3_score2,
         score3: this.score.course3_score3,
         score4: this.score.course3_score4,
-        order1: this.course3_order1,
-        order2: this.course3_order1,
-        order3: this.course3_order1,
-        order4: this.course3_order1,
       },
       {
         score1: this.score.course4_score1,
         score2: this.score.course4_score2,
         score3: this.score.course4_score3,
         score4: this.score.course4_score4,
-        order1: this.course4_order1,
-        order2: this.course4_order1,
-        order3: this.course4_order1,
-        order4: this.course4_order1,
       }
       ,
       {
@@ -2502,140 +2492,84 @@ export class ScorelistComponent {
         score2: this.score.course5_score2,
         score3: this.score.course5_score3,
         score4: this.score.course5_score4,
-        order1: this.course5_order1,
-        order2: this.course5_order1,
-        order3: this.course5_order1,
-        order4: this.course5_order1,
       },
       {
         score1: this.score.course6_score1,
         score2: this.score.course6_score2,
         score3: this.score.course6_score3,
         score4: this.score.course6_score4,
-        order1: this.course6_order1,
-        order2: this.course6_order1,
-        order3: this.course6_order1,
-        order4: this.course6_order1,
       },
       {
         score1: this.score.course7_score1,
         score2: this.score.course7_score2,
         score3: this.score.course7_score3,
         score4: this.score.course7_score4,
-        order1: this.course7_order1,
-        order2: this.course7_order1,
-        order3: this.course7_order1,
-        order4: this.course7_order1,
       },
       {
         score1: this.score.course8_score1,
         score2: this.score.course8_score2,
         score3: this.score.course8_score3,
         score4: this.score.course8_score4,
-        order1: this.course8_order1,
-        order2: this.course8_order1,
-        order3: this.course8_order1,
-        order4: this.course8_order1,
       },
       {
         score1: this.score.course9_score1,
         score2: this.score.course9_score2,
         score3: this.score.course9_score3,
         score4: this.score.course9_score4,
-        order1: this.course9_order1,
-        order2: this.course9_order1,
-        order3: this.course9_order1,
-        order4: this.course9_order1,
       },
       {
         score1: this.score.course10_score1,
         score2: this.score.course10_score2,
         score3: this.score.course10_score3,
         score4: this.score.course10_score4,
-        order1: this.course10_order1,
-        order2: this.course10_order1,
-        order3: this.course10_order1,
-        order4: this.course10_order1,
       },
       {
         score1: this.score.course11_score1,
         score2: this.score.course11_score2,
         score3: this.score.course11_score3,
         score4: this.score.course11_score4,
-        order1: this.course11_order1,
-        order2: this.course11_order1,
-        order3: this.course11_order1,
-        order4: this.course11_order1,
       },
       {
         score1: this.score.course12_score1,
         score2: this.score.course12_score2,
         score3: this.score.course12_score3,
         score4: this.score.course12_score4,
-        order1: this.course12_order1,
-        order2: this.course12_order1,
-        order3: this.course12_order1,
-        order4: this.course12_order1,
       },
       {
         score1: this.score.course13_score1,
         score2: this.score.course13_score2,
         score3: this.score.course13_score3,
         score4: this.score.course13_score4,
-        order1: this.course13_order1,
-        order2: this.course13_order1,
-        order3: this.course13_order1,
-        order4: this.course13_order1,
       },
       {
         score1: this.score.course14_score1,
         score2: this.score.course14_score2,
         score3: this.score.course14_score3,
         score4: this.score.course14_score4,
-        order1: this.course14_order1,
-        order2: this.course14_order1,
-        order3: this.course14_order1,
-        order4: this.course14_order1,
       },
       {
         score1: this.score.course15_score1,
         score2: this.score.course15_score2,
         score3: this.score.course15_score3,
         score4: this.score.course15_score4,
-        order1: this.course15_order1,
-        order2: this.course15_order1,
-        order3: this.course15_order1,
-        order4: this.course15_order1,
       },
       {
         score1: this.score.course16_score1,
         score2: this.score.course16_score2,
         score3: this.score.course16_score3,
         score4: this.score.course16_score4,
-        order1: this.course16_order1,
-        order2: this.course16_order1,
-        order3: this.course16_order1,
-        order4: this.course16_order1,
       },
       {
         score1: this.score.course17_score1,
         score2: this.score.course17_score2,
         score3: this.score.course17_score3,
         score4: this.score.course17_score4,
-        order1: this.course17_order1,
-        order2: this.course17_order1,
-        order3: this.course17_order1,
-        order4: this.course17_order1,
       },
       {
         score1: this.score.course18_score1,
         score2: this.score.course18_score2,
         score3: this.score.course18_score3,
         score4: this.score.course18_score4,
-        order1: this.course18_order1,
-        order2: this.course18_order1,
-        order3: this.course18_order1,
-        order4: this.course18_order1,
       }
     ]
 
@@ -2653,48 +2587,51 @@ export class ScorelistComponent {
       p3point = 0
       p4point = 0
 
+      //先頭からループ
+      //処理前に初期化
+      this.order[this.courseIndex][0] = 0
+      this.order[this.courseIndex][1] = 0
+      this.order[this.courseIndex][2] = 0
+      this.order[this.courseIndex][3] = 0
+
+      //最初のコースの場合、手入力した値をバッジにセット
       if(this.courseIndex == 0){
         this.order[0][0] = this.order1_1
         this.order[0][1] = this.order1_2
         this.order[0][2] = this.order1_3
         this.order[0][3] = this.order1_4
-      }
 
-      //先頭からループ
-      //スコアが入力済みの場合、次のバッジの順番を決める
-      //前回のスコアを見て順番を決める
-      if(score.score1 == 0 && score.score2 == 0 && score.score3 == 0 && score.score4 == 0){
-        //最初のコースの場合、手入力した値をバッジにセット
-        if(this.courseIndex == 0){
-          this.order[0][0] = this.order1_1
-          this.order[0][1] = this.order1_2
-          this.order[0][2] = this.order1_3
-          this.order[0][3] = this.order1_4
+      } else {
+        //最初のコース以外の場合、スコアを見て判定する
+        if (scores[this.courseIndex - 1].score1 == 0 && scores[this.courseIndex - 1].score2 == 0
+          && scores[this.courseIndex - 1].score3 == 0 && scores[this.courseIndex - 1].score4 == 0) {
+            //前のコースの打数が未入力0の場合は、バッジは出さない
+            this.order[this.courseIndex][0] = 0
+            this.order[this.courseIndex][1] = 0
+            this.order[this.courseIndex][2] = 0
+            this.order[this.courseIndex][3] = 0
+          }
 
-          //ループを抜ける
-          break
-        }else{
-          //最初のコース以外の場合、スコアを見て判定する
-          //＋＋＋
-          //全部処理してもいいかも、p1pointが0ならバッジでないので、参加してない人は数字でない
-          //けど比較式に困るか・・・
-          //this.setBadge(scores[this.courseIndex], scores[this.courseIndex - 1])
+        if (scores[this.courseIndex - 1].score1 != 0 && scores[this.courseIndex - 1].score2 != 0
+          && scores[this.courseIndex - 1].score3 != 0 && scores[this.courseIndex - 1].score4 != 0) {
+            //前のコースが入力済み、かつ
+            //前のコースのバッジが表示済みの場合、バッジを表示
+            if (this.order[this.courseIndex - 1][0] != 0 && this.order[this.courseIndex - 1][1] != 0
+              && this.order[this.courseIndex - 1][2] != 0 && this.order[this.courseIndex - 1][3] != 0) {
+                p1point = +scores[this.courseIndex - 1].score1 * 10 + +this.order[this.courseIndex - 1][0]
+                p2point = +scores[this.courseIndex - 1].score2 * 10 + +this.order[this.courseIndex - 1][1]
+                p3point = +scores[this.courseIndex - 1].score3 * 10 + +this.order[this.courseIndex - 1][2]
+                p4point = +scores[this.courseIndex - 1].score4 * 10 + +this.order[this.courseIndex - 1][3]
+              }
 
-          p1point = +scores[this.courseIndex - 1].score1 * 10 + +scores[this.courseIndex - 1].order1
-          p2point = +scores[this.courseIndex - 1].score2 * 10 + +scores[this.courseIndex - 1].order2
-          p3point = +scores[this.courseIndex - 1].score3 * 10 + +scores[this.courseIndex - 1].order3
-          p4point = +scores[this.courseIndex - 1].score4 * 10 + +scores[this.courseIndex - 1].order4
-
-          this.setBagdeOrder(this.courseIndex, p1point, p2point, p3point, p4point)
-
-          //ループを抜ける
-          break
-        }
+            this.setBagdeOrder(this.courseIndex, p1point, p2point, p3point, p4point)
+          }
       }
       this.courseIndex++
     }
   }
 
+  //バッジを設定する処理
   setBagdeOrder(trgt:any, p1point:any, p2point:any, p3point:any, p4point:any) {
 
     //一人目

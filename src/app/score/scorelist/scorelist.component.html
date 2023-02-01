@@ -139,9 +139,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course3_score1 }}
-                <div *ngIf="course3_order1 != 0">
+                <div *ngIf="order[2][0] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course3_order1 }}
+                    {{ order[2][0] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -152,9 +152,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course3_score2 }}
-                <div *ngIf="course3_order2 != 0">
+                <div *ngIf="order[2][1] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course3_order2 }}
+                    {{ order[2][1] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -165,9 +165,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course3_score3 }}
-                <div *ngIf="course3_order3 != 0">
+                <div *ngIf="order[2][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course3_order3 }}
+                    {{ order[2][2] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -178,9 +178,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course3_score4 }}
-                <div *ngIf="course3_order4 != 0">
+                <div *ngIf="order[2][3] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course3_order4 }}
+                    {{ order[2][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -198,9 +198,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course4_score1 }}
-                <div *ngIf="course4_order1 != 0">
+                <div *ngIf="order[3][0] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course4_order1 }}
+                    {{ order[3][0] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -211,9 +211,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course4_score2 }}
-                <div *ngIf="course4_order2 != 0">
+                <div *ngIf="order[3][1] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course4_order2 }}
+                    {{ order[3][1] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -224,9 +224,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course4_score3 }}
-                <div *ngIf="course4_order3 != 0">
+                <div *ngIf="order[3][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course4_order3 }}
+                    {{ order[3][2] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -237,9 +237,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course4_score4 }}
-                <div *ngIf="course4_order4 != 0">
+                <div *ngIf="order[3][3] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course4_order4 }}
+                    {{ order[3][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -257,9 +257,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course5_score1 }}
-                <div *ngIf="course5_order1 != 0">
+                <div *ngIf="order[4][0] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course5_order1 }}
+                    {{ order[4][0] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -270,9 +270,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course5_score2 }}
-                <div *ngIf="course5_order2 != 0">
+                <div *ngIf="order[4][1] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course5_order2 }}
+                    {{ order[4][1] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -283,9 +283,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course5_score3 }}
-                <div *ngIf="course5_order3 != 0">
+                <div *ngIf="order[4][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course5_order3 }}
+                    {{ order[4][2] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -296,9 +296,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course5_score4 }}
-                <div *ngIf="course5_order4 != 0">
+                <div *ngIf="order[4][3] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course5_order4 }}
+                    {{ order[4][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -316,9 +316,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course6_score1 }}
-                <div *ngIf="course6_order1 != 0">
+                <div *ngIf="order[5][0] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course6_order1 }}
+                    {{ order[5][0] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -329,9 +329,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course6_score2 }}
-                <div *ngIf="course6_order2 != 0">
+                <div *ngIf="order[5][1] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course6_order2 }}
+                    {{ order[5][1] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -342,9 +342,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course6_score3 }}
-                <div *ngIf="course6_order3 != 0">
+                <div *ngIf="order[5][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course6_order3 }}
+                    {{ order[5][2] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -355,9 +355,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course6_score4 }}
-                <div *ngIf="course6_order4 != 0">
+                <div *ngIf="order[5][3] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course6_order4 }}
+                    {{ order[5][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -375,9 +375,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course7_score1 }}
-                <div *ngIf="course7_order1 != 0">
+                <div *ngIf="order[6][0] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course7_order1 }}
+                    {{ order[6][0] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -388,9 +388,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course7_score2 }}
-                <div *ngIf="course7_order2 != 0">
+                <div *ngIf="order[6][1] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course7_order2 }}
+                    {{ order[6][1] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -401,9 +401,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course7_score3 }}
-                <div *ngIf="course7_order3 != 0">
+                <div *ngIf="order[6][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course7_order3 }}
+                    {{ order[6][2] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -414,9 +414,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course7_score4 }}
-                <div *ngIf="course7_order4 != 0">
+                <div *ngIf="order[6][3] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course7_order4 }}
+                    {{ order[6][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -434,9 +434,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course8_score1 }}
-                <div *ngIf="course8_order1 != 0">
+                <div *ngIf="order[7][0] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course8_order1 }}
+                    {{ order[7][0] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -447,9 +447,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course8_score2 }}
-                <div *ngIf="course8_order2 != 0">
+                <div *ngIf="order[7][1] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course8_order2 }}
+                    {{ order[7][1] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -460,9 +460,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course8_score3 }}
-                <div *ngIf="course8_order3 != 0">
+                <div *ngIf="order[7][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course8_order3 }}
+                    {{ order[7][2] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -473,9 +473,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course8_score4 }}
-                <div *ngIf="course8_order4 != 0">
+                <div *ngIf="order[7][3] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course8_order4 }}
+                    {{ order[7][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -493,9 +493,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course9_score1 }}
-                <div *ngIf="course9_order1 != 0">
+                <div *ngIf="order[8][0] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course9_order1 }}
+                    {{ order[8][0] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -506,9 +506,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course9_score2 }}
-                <div *ngIf="course9_order2 != 0">
+                <div *ngIf="order[8][1] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course9_order2 }}
+                    {{ order[8][1] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -519,9 +519,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course9_score3 }}
-                <div *ngIf="course9_order3 != 0">
+                <div *ngIf="order[8][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course9_order3 }}
+                    {{ order[8][2] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -532,9 +532,9 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course9_score4 }}
-                <div *ngIf="course9_order4 != 0">
+                <div *ngIf="order[8][3] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ course9_order4 }}
+                    {{ order[8][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -562,10 +562,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course10_score1 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course10_order1 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[9][0] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[9][0] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -573,10 +575,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course10_score2 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course10_order2 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[9][1] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[9][1] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -584,10 +588,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course10_score3 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course10_order3 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[9][2] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[9][2] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -595,10 +601,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course10_score4 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course10_order4 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[9][3] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[9][3] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -613,10 +621,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course11_score1 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course11_order1 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[10][0] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[10][0] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -624,10 +634,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course11_score2 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course11_order2 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[10][1] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[10][1] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -635,10 +647,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course11_score3 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course11_order3 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[10][2] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[10][2] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -646,10 +660,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course11_score4 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course11_order4 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[10][3] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[10][3] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -664,10 +680,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course12_score1 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course12_order1 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[11][0] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[11][0] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -675,10 +693,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course12_score2 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course12_order2 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[11][1] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[11][1] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -686,10 +706,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course12_score3 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course12_order3 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[11][2] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[11][2] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -697,10 +719,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course12_score4 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course12_order4 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[11][3] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[11][3] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -715,10 +739,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course13_score1 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course13_order1 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[12][0] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[12][0] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -726,10 +752,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course13_score2 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course13_order2 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[12][1] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[12][1] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -737,10 +765,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course13_score3 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course13_order3 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[12][2] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[12][2] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -748,10 +778,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course13_score4 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course13_order4 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[12][3] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[12][3] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -766,10 +798,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course14_score1 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course14_order1 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[13][0] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[13][0] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -777,10 +811,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course14_score2 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course14_order2 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[13][1] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[13][1] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -788,10 +824,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course14_score3 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course14_order3 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[13][2] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[13][2] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -799,10 +837,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course14_score4 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course14_order4 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[13][3] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[13][3] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -817,10 +857,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course15_score1 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course15_order1 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[14][0] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[14][0] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -828,10 +870,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course15_score2 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course15_order2 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[14][1] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[14][1] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -839,10 +883,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course15_score3 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course15_order3 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[14][2] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[14][2] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -850,10 +896,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course15_score4 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course15_order4 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[14][3] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[14][3] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -868,10 +916,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course16_score1 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course16_order1 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[15][0] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[15][0] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -879,10 +929,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course16_score2 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course16_order2 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[15][1] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[15][1] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -890,10 +942,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course16_score3 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course16_order3 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[15][2] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[15][2] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -901,10 +955,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course16_score4 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course16_order4 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[15][3] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[15][3] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -919,10 +975,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course17_score1 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course17_order1 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[16][0] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[16][0] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -930,10 +988,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course17_score2 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course17_order2 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[16][1] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[16][1] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -941,10 +1001,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course17_score3 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course17_order3 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[16][2] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[16][2] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -952,10 +1014,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course17_score4 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course17_order4 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[16][3] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[16][3] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -970,10 +1034,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course18_score1 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course18_order1 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[17][0] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[17][0] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -981,10 +1047,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course18_score2 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course18_order2 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[17][1] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[17][1] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -992,10 +1060,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course18_score3 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course18_order3 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[17][2] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[17][2] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
@@ -1003,10 +1073,12 @@
             <div class="d-grid gap-2 col-8 mx-auto">
               <button type="button" class="btn btn-light position-relative">
                 {{ score.course18_score4 }}
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  {{ course18_order4 }}
-                  <span class="visually-hidden">unread messages</span>
-                </span>
+                <div *ngIf="order[17][3] != 0">
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{ order[17][3] }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </div>
               </button>
             </div>
           </td>
