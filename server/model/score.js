@@ -10,6 +10,8 @@ const ScoreSchema = new Schema({
   name3: String,
   name4: String,
 
+  player: Number,
+
   course1_no: String,
   course1_score1: Number,
   course1_put1: Number,

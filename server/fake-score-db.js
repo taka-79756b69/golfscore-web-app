@@ -13,6 +13,8 @@ class FakeScoreDb {
       name3: 'テスト三郎',
       name4: 'テスト四郎',
 
+      player: 4,
+
       course1_no: 'OUT1',
       course1_score1: 0,
       course1_put1: 0,

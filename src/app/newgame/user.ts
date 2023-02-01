@@ -5,4 +5,5 @@ export class User {
   name4!: string
   playDate!: Date
   courseName!: string
+  player!: number
 }
