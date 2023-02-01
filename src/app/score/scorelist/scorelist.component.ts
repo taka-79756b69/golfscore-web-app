@@ -333,7 +333,6 @@ export class ScorelistComponent {
       scoreObservable.subscribe(
         (data)=>{
           this.score = data
-          this.initDataSet()
           //console.log('got data: '+ data)
         },
         (err)=>{
@@ -341,6 +340,7 @@ export class ScorelistComponent {
         },
         ()=>{
           //console.log('complete!')
+          this.initDataSet()
         }
       )
     })
@@ -364,7 +364,6 @@ export class ScorelistComponent {
 
     this.setOlympicTotal()
     this.setLasvegasTotal()
-
     this.setBadgeOrder()
   }
 
@@ -1050,22 +1049,22 @@ export class ScorelistComponent {
       course1_put1: this.score.course1_put1,
       course1_olympic1: this.score.course1_olympic1,
       course1_lasvegas1: this.score.course1_lasvegas1,
-      course1_order1: this.course1_order1,
+      course1_order1: this.order1_1,
       course1_score2: this.score.course1_score2,
       course1_put2: this.score.course1_put2,
       course1_olympic2: this.score.course1_olympic2,
       course1_lasvegas2: this.score.course1_lasvegas2,
-      course1_order2: this.course1_order2,
+      course1_order2: this.order1_2,
       course1_score3: this.score.course1_score3,
       course1_put3: this.score.course1_put3,
       course1_olympic3: this.score.course1_olympic3,
       course1_lasvegas3: this.score.course1_lasvegas3,
-      course1_order3: this.course1_order3,
+      course1_order3: this.order1_3,
       course1_score4: this.score.course1_score4,
       course1_put4: this.score.course1_put4,
       course1_olympic4: this.score.course1_olympic4,
       course1_lasvegas4: this.score.course1_lasvegas4,
-      course1_order4: this.course1_order4,
+      course1_order4: this.order1_4,
 
       course2_no: this.score.course2_no,
       course2_score1: this.score.course2_score1,
