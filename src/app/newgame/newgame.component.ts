@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { DateAdapter, NativeDateAdapter } from '@angular/material/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { from } from 'rxjs';
 import { ScoreService } from '../common/service/score.service';
 import { User } from './user';
 
@@ -27,12 +28,27 @@ export class NewgameComponent {
   }
 
   //modelの初期化
-  user: User = { name1: '', name2: '', name3: '', name4: '', playDate: new Date(), courseName: '' };
+  user: User = { name1: '', name2: '', name3: '', name4: '', playDate: new Date(), courseName: '', player: 0 };
   //NgFormの作成
   form!: NgForm;
 
+  player = 0
+
   //新規保存
   onSubmit(form: any) {
+
+    if(form.value.name1 != ''){
+      this.player++
+    }
+    if(form.value.name2 != ''){
+      this.player++
+    }
+    if(form.value.name3 != ''){
+      this.player++
+    }
+    if(form.value.name4 != ''){
+      this.player++
+    }
 
     this.activatedRoute.paramMap.subscribe(params => {
 
@@ -55,8 +71,11 @@ export class NewgameComponent {
   }
 
   reload(){
+
     //ここで最新のレコードを取ってスコア入力画面に遷移
     //this.router.navigate(["score/:scoreId"])
+    //console.log(req.body)
+
     this.activatedRoute.paramMap.subscribe(params => {
 
       const scoreObservable = this.scoreService.getScoreListNewOne()
@@ -64,7 +83,7 @@ export class NewgameComponent {
       scoreObservable.subscribe(
         (data)=>{
           //console.log('got data: '+ JSON.stringify(data))
-          this.router.navigate(["score/"+data[0]._id])
+          this.router.navigate(["score/" + this.player + "/"+data[0]._id])
         },
         (err)=>{
           //console.log('got err: '+ err)

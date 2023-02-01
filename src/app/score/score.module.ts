@@ -9,15 +9,17 @@ import { ScoreService } from '../common/service/score.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { MatSnackBarModule } from '@angular/material/snack-bar'
+import { Scorelist3ptComponent } from './scorelist_3pt/scorelist3pt.component';
 
 const routes: Routes = [
   {
     path: 'score', component: ScoreComponent,
     children: [
      { path: '', component: ScorelisttopComponent },
-     { path: ':scoreId', component: ScorelistComponent },
+     { path: '4/:scoreId', component: ScorelistComponent },
+     { path: '3/:scoreId', component: Scorelist3ptComponent },
     //  { path: ':scoreId/score', component: ScoreComponent },
-     { path: ':scoreId/score', redirectTo: '/score', pathMatch: 'full'},
+    //  { path: ':scoreId/score', redirectTo: '/score', pathMatch: 'full'},
      { path: 'scorelisttop', component: ScorelisttopComponent }
     ]
   }
@@ -28,6 +30,7 @@ const routes: Routes = [
     ScoreComponent,
     ScorelistComponent,
     ScorelisttopComponent,
+    Scorelist3ptComponent
   ],
   imports: [
     RouterModule.forChild(routes),

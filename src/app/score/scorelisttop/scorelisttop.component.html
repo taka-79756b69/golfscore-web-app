@@ -6,7 +6,7 @@
           <div class="card-body">
             <h3 class="card-title">{{ tmp.courseName }}{{ "  (" + tmp.playDate.substring(0,10) + ")" }}</h3>
             <div class="text-start">
-              <a routerLink="{{ tmp._id }}">
+              <a routerLink="{{ tmp.player }}/{{ tmp._id }}">
                 <div class="btn btn-primary">スコア表示</div>
               </a>
             </div>

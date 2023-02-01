@@ -27,7 +27,22 @@ router.get('/:scoreId', function(req, res) {
 
 router.post('', function(req, res) {
   const username = req.body.name1
+  let countPlayer = 0;
   //console.log(req.body)
+  //playerをカウント
+  if(req.body.name1 != ''){
+    countPlayer++
+  }
+  if(req.body.name2 != ''){
+    countPlayer++
+  }
+  if(req.body.name3 != ''){
+    countPlayer++
+  }
+  if(req.body.name4 != ''){
+    countPlayer++
+  }
+
   score.insertMany({
 
     courseName: req.body.courseName,
@@ -37,6 +52,8 @@ router.post('', function(req, res) {
     name2: req.body.name2,
     name3: req.body.name3,
     name4: req.body.name4,
+
+    player: countPlayer,
 
     course1_no: 'OUT1',
     course1_score1: 0,
