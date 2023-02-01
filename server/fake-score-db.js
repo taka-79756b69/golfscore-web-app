@@ -15,7 +15,8 @@ class FakeScoreDb {
 
       player: 4,
 
-      course1_no: 'OUT1',
+      //course1_no: 'OUT1',
+      course1_no: '1st',
       course1_score1: 0,
       course1_put1: 0,
       course1_olympic1: 0,
@@ -37,7 +38,7 @@ class FakeScoreDb {
       course1_lasvegas4: 0,
       course1_order4: 0,
 
-      course2_no: 'OUT2',
+      course2_no: '2nd',
       course2_score1: 0,
       course2_put1: 0,
       course2_olympic1: 0,
@@ -55,7 +56,7 @@ class FakeScoreDb {
       course2_olympic4: 0,
       course2_lasvegas4: 0,
 
-      course3_no: 'OUT3',
+      course3_no: '3rd',
       course3_score1: 0,
       course3_put1: 0,
       course3_olympic1: 0,
@@ -73,7 +74,7 @@ class FakeScoreDb {
       course3_olympic4: 0,
       course3_lasvegas4: 0,
 
-      course4_no: 'OUT4',
+      course4_no: '4th',
       course4_score1: 0,
       course4_put1: 0,
       course4_olympic1: 0,
@@ -91,7 +92,7 @@ class FakeScoreDb {
       course4_olympic4: 0,
       course4_lasvegas4: 0,
 
-      course5_no: 'OUT5',
+      course5_no: '5th',
       course5_score1: 0,
       course5_put1: 0,
       course5_olympic1: 0,
@@ -109,7 +110,7 @@ class FakeScoreDb {
       course5_olympic4: 0,
       course5_lasvegas4: 0,
 
-      course6_no: 'OUT6',
+      course6_no: '6th',
       course6_score1: 0,
       course6_put1: 0,
       course6_olympic1: 0,
@@ -127,7 +128,7 @@ class FakeScoreDb {
       course6_olympic4: 0,
       course6_lasvegas4: 0,
 
-      course7_no: 'OUT7',
+      course7_no: '7th',
       course7_score1: 0,
       course7_put1: 0,
       course7_olympic1: 0,
@@ -145,7 +146,7 @@ class FakeScoreDb {
       course7_olympic4: 0,
       course7_lasvegas4: 0,
 
-      course8_no: 'OUT8',
+      course8_no: '8th',
       course8_score1: 0,
       course8_put1: 0,
       course8_olympic1: 0,
@@ -163,7 +164,7 @@ class FakeScoreDb {
       course8_olympic4: 0,
       course8_lasvegas4: 0,
 
-      course9_no: 'OUT9',
+      course9_no: '9th',
       course9_score1: 0,
       course9_put1: 0,
       course9_olympic1: 0,
@@ -181,7 +182,7 @@ class FakeScoreDb {
       course9_olympic4: 0,
       course9_lasvegas4: 0,
 
-      course10_no: 'IN1',
+      course10_no: '10th',
       course10_score1: 0,
       course10_put1: 0,
       course10_olympic1: 0,
@@ -199,7 +200,7 @@ class FakeScoreDb {
       course10_olympic4: 0,
       course10_lasvegas4: 0,
 
-      course11_no: 'IN2',
+      course11_no: '11th',
       course11_score1: 0,
       course11_put1: 0,
       course11_olympic1: 0,
@@ -217,7 +218,7 @@ class FakeScoreDb {
       course11_olympic4: 0,
       course11_lasvegas4: 0,
 
-      course12_no: 'IN3',
+      course12_no: '12th',
       course12_score1: 0,
       course12_put1: 0,
       course12_olympic1: 0,
@@ -235,7 +236,7 @@ class FakeScoreDb {
       course12_olympic4: 0,
       course12_lasvegas4: 0,
 
-      course13_no: 'IN4',
+      course13_no: '13th',
       course13_score1: 0,
       course13_put1: 0,
       course13_olympic1: 0,
@@ -253,7 +254,7 @@ class FakeScoreDb {
       course13_olympic4: 0,
       course13_lasvegas4: 0,
 
-      course14_no: 'IN5',
+      course14_no: '14th',
       course14_score1: 0,
       course14_put1: 0,
       course14_olympic1: 0,
@@ -271,7 +272,7 @@ class FakeScoreDb {
       course14_olympic4: 0,
       course14_lasvegas4: 0,
 
-      course15_no: 'IN6',
+      course15_no: '15th',
       course15_score1: 0,
       course15_put1: 0,
       course15_olympic1: 0,
@@ -289,7 +290,7 @@ class FakeScoreDb {
       course15_olympic4: 0,
       course15_lasvegas4: 0,
 
-      course16_no: 'IN7',
+      course16_no: '16th',
       course16_score1: 0,
       course16_put1: 0,
       course16_olympic1: 0,
@@ -307,7 +308,7 @@ class FakeScoreDb {
       course16_olympic4: 0,
       course16_lasvegas4: 0,
 
-      course17_no: 'IN8',
+      course17_no: '17th',
       course17_score1: 0,
       course17_put1: 0,
       course17_olympic1: 0,
@@ -325,7 +326,7 @@ class FakeScoreDb {
       course17_olympic4: 0,
       course17_lasvegas4: 0,
 
-      course18_no: 'IN9',
+      course18_no: '18th',
       course18_score1: 0,
       course18_put1: 0,
       course18_olympic1: 0,

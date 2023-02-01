@@ -31,11 +31,16 @@ export class NewgameComponent {
   user: User = { name1: '', name2: '', name3: '', name4: '', playDate: new Date(), courseName: '', player: 0 };
   //NgFormの作成
   form!: NgForm;
+  //保存ダイアログ用のフラグ
+  saving: any
 
   player = 0
 
   //新規保存
   onSubmit(form: any) {
+
+    //alert("保存を開始します。「保存完了」が表示されるまで待ってください。")
+    //this.saving = true
 
     if(form.value.name1 != ''){
       this.player++

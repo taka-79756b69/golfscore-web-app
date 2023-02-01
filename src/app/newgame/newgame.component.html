@@ -69,13 +69,38 @@
     <div class="row">
       <div class="col-4"></div>
       <div class="col-4 d-grid gap-2">
-        <!-- <a routerLink="/score" routerLinkActive="router-link-active" > -->
-          <button class="btn btn-primary btn-block" type="submit">プレイ開始</button>
-        <!-- </a> -->
+        <button class="btn btn-primary btn-block" type="submit" data-bs-toggle="modal" data-bs-target="#saveDialog">プレイ開始</button>
       </div>
       <div class="col-4"></div>
     </div>
   </div>
 </form>
 
+<!-- 保存確認ダイアログ -->
+<div class="modal fade" id="saveDialog" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog modal-sm modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-9 text-center">
+              <h3>新規データを作成しました。</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-9">
+              <div class="d-grid">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">閉じる</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
