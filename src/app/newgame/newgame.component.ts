@@ -40,7 +40,7 @@ export class NewgameComponent {
   onSubmit(form: any) {
 
     //alert("保存を開始します。「保存完了」が表示されるまで待ってください。")
-    //this.saving = true
+    this.saving = true
 
     if(form.value.name1 != ''){
       this.player++
@@ -63,7 +63,8 @@ export class NewgameComponent {
         (data)=>{
           //console.log('got data: '+ JSON.stringify(data))
           //this.router.navigate(["score"])
-          this.reload()
+          //this.reload()
+          this.saving = false
         },
         (err)=>{
           //console.log('got err: '+ err)
