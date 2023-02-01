@@ -28,11 +28,13 @@ export class NewgameComponent {
   }
 
   //modelの初期化
-  user: User = { name1: '', name2: '', name3: '', name4: '', playDate: new Date(), courseName: '', player: 0 };
+  user: User = { name1: '', name2: '', name3: '', name4: '', playDate: new Date(), courseName: '', player: 0, inout: 0 };
   //NgFormの作成
   form!: NgForm;
   //保存ダイアログ用のフラグ
   saving: any
+  //バリデーション
+  validate = true
 
   player = 0
 
@@ -99,5 +101,15 @@ export class NewgameComponent {
         }
       )
     })
+  }
+
+  inputCheck(name1: any, name2: any, name3: any) {
+
+    this.validate = true
+    if(name1 == "" || name2 == "" || name3 == ""){
+      //console.log("error")
+    } else {
+      this.validate = false
+    }
   }
 }

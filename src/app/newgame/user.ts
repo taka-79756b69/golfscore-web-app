@@ -6,4 +6,5 @@ export class User {
   playDate!: Date
   courseName!: string
   player!: number
+  inout!: number
 }

@@ -55,7 +55,7 @@ router.post('', function(req, res) {
 
     player: countPlayer,
 
-    course1_no: 'OUT1',
+    course1_no: (req.body.inout == 0 ? '1st' : '10th'),
     course1_score1: 0,
     course1_put1: 0,
     course1_olympic1: 0,
@@ -77,7 +77,7 @@ router.post('', function(req, res) {
     course1_lasvegas4: 0,
     course1_order4: 0,
 
-    course2_no: 'OUT2',
+    course2_no: (req.body.inout == 0 ? '2nd' : '11th'),
     course2_score1: 0,
     course2_put1: 0,
     course2_olympic1: 0,
@@ -95,7 +95,7 @@ router.post('', function(req, res) {
     course2_olympic4: 0,
     course2_lasvegas4: 0,
 
-    course3_no: 'OUT3',
+    course3_no: (req.body.inout == 0 ? '3rd' : '12th'),
     course3_score1: 0,
     course3_put1: 0,
     course3_olympic1: 0,
@@ -113,7 +113,7 @@ router.post('', function(req, res) {
     course3_olympic4: 0,
     course3_lasvegas4: 0,
 
-    course4_no: 'OUT4',
+    course4_no: (req.body.inout == 0 ? '4th' : '13th'),
     course4_score1: 0,
     course4_put1: 0,
     course4_olympic1: 0,
@@ -131,7 +131,7 @@ router.post('', function(req, res) {
     course4_olympic4: 0,
     course4_lasvegas4: 0,
 
-    course5_no: 'OUT5',
+    course5_no: (req.body.inout == 0 ? '5th' : '14th'),
     course5_score1: 0,
     course5_put1: 0,
     course5_olympic1: 0,
@@ -149,7 +149,7 @@ router.post('', function(req, res) {
     course5_olympic4: 0,
     course5_lasvegas4: 0,
 
-    course6_no: 'OUT6',
+    course6_no: (req.body.inout == 0 ? '6th' : '15th'),
     course6_score1: 0,
     course6_put1: 0,
     course6_olympic1: 0,
@@ -167,7 +167,7 @@ router.post('', function(req, res) {
     course6_olympic4: 0,
     course6_lasvegas4: 0,
 
-    course7_no: 'OUT7',
+    course7_no: (req.body.inout == 0 ? '7th' : '16th'),
     course7_score1: 0,
     course7_put1: 0,
     course7_olympic1: 0,
@@ -185,7 +185,7 @@ router.post('', function(req, res) {
     course7_olympic4: 0,
     course7_lasvegas4: 0,
 
-    course8_no: 'OUT8',
+    course8_no: (req.body.inout == 0 ? '8th' : '17th'),
     course8_score1: 0,
     course8_put1: 0,
     course8_olympic1: 0,
@@ -203,7 +203,7 @@ router.post('', function(req, res) {
     course8_olympic4: 0,
     course8_lasvegas4: 0,
 
-    course9_no: 'OUT9',
+    course9_no: (req.body.inout == 0 ? '9th' : '18th'),
     course9_score1: 0,
     course9_put1: 0,
     course9_olympic1: 0,
@@ -221,7 +221,7 @@ router.post('', function(req, res) {
     course9_olympic4: 0,
     course9_lasvegas4: 0,
 
-    course10_no: 'IN1',
+    course10_no: (req.body.inout == 0 ? '10th' : '1st'),
     course10_score1: 0,
     course10_put1: 0,
     course10_olympic1: 0,
@@ -239,7 +239,7 @@ router.post('', function(req, res) {
     course10_olympic4: 0,
     course10_lasvegas4: 0,
 
-    course11_no: 'IN2',
+    course11_no: (req.body.inout == 0 ? '11th' : '2nd'),
     course11_score1: 0,
     course11_put1: 0,
     course11_olympic1: 0,
@@ -257,7 +257,7 @@ router.post('', function(req, res) {
     course11_olympic4: 0,
     course11_lasvegas4: 0,
 
-    course12_no: 'IN3',
+    course12_no: (req.body.inout == 0 ? '12th' : '3rd'),
     course12_score1: 0,
     course12_put1: 0,
     course12_olympic1: 0,
@@ -275,7 +275,7 @@ router.post('', function(req, res) {
     course12_olympic4: 0,
     course12_lasvegas4: 0,
 
-    course13_no: 'IN4',
+    course13_no: (req.body.inout == 0 ? '13th' : '4th'),
     course13_score1: 0,
     course13_put1: 0,
     course13_olympic1: 0,
@@ -293,7 +293,7 @@ router.post('', function(req, res) {
     course13_olympic4: 0,
     course13_lasvegas4: 0,
 
-    course14_no: 'IN5',
+    course14_no: (req.body.inout == 0 ? '14th' : '5th'),
     course14_score1: 0,
     course14_put1: 0,
     course14_olympic1: 0,
@@ -311,7 +311,7 @@ router.post('', function(req, res) {
     course14_olympic4: 0,
     course14_lasvegas4: 0,
 
-    course15_no: 'IN6',
+    course15_no: (req.body.inout == 0 ? '15th' : '6th'),
     course15_score1: 0,
     course15_put1: 0,
     course15_olympic1: 0,
@@ -329,7 +329,7 @@ router.post('', function(req, res) {
     course15_olympic4: 0,
     course15_lasvegas4: 0,
 
-    course16_no: 'IN7',
+    course16_no: (req.body.inout == 0 ? '16th' : '7th'),
     course16_score1: 0,
     course16_put1: 0,
     course16_olympic1: 0,
@@ -347,7 +347,7 @@ router.post('', function(req, res) {
     course16_olympic4: 0,
     course16_lasvegas4: 0,
 
-    course17_no: 'IN8',
+    course17_no: (req.body.inout == 0 ? '17th' : '8th'),
     course17_score1: 0,
     course17_put1: 0,
     course17_olympic1: 0,
@@ -365,7 +365,7 @@ router.post('', function(req, res) {
     course17_olympic4: 0,
     course17_lasvegas4: 0,
 
-    course18_no: 'IN9',
+    course18_no: (req.body.inout == 0 ? '18th' : '9th'),
     course18_score1: 0,
     course18_put1: 0,
     course18_olympic1: 0,

@@ -4,16 +4,16 @@
       <div class="col-6">
         <div class="card text-white bg-secondary">
           <div class="card-body">
-            <h5 class="card-title">Player1</h5>
-            <input [ngModel]="user.name1" name="name1" class="form-control" type="text" placeholder="お名前">
+            <h5 class="card-title">Player1 <span class="badge bg-danger">必須</span></h5>
+            <input [ngModel]="user.name1" name="name1" class="form-control" type="text" placeholder="お名前" #name1 (blur)="inputCheck(name1.value, name2.value, name3.value)">
           </div>
         </div>
       </div>
       <div class="col-6">
         <div class="card text-white bg-secondary">
           <div class="card-body">
-            <h5 class="card-title">Player2</h5>
-            <input [ngModel]="user.name2" name="name2" class="form-control" type="text" placeholder="お名前">
+            <h5 class="card-title">Player2 <span class="badge bg-danger">必須</span></h5>
+            <input [ngModel]="user.name2" name="name2" class="form-control" type="text" placeholder="お名前" #name2 (blur)="inputCheck(name1.value, name2.value, name3.value)">
           </div>
         </div>
       </div>
@@ -23,15 +23,15 @@
       <div class="col-6">
         <div class="card text-white bg-secondary">
           <div class="card-body">
-            <h5 class="card-title">Player13</h5>
-            <input [ngModel]="user.name3" name="name3" class="form-control" type="text" placeholder="お名前">
+            <h5 class="card-title">Player3 <span class="badge bg-danger">必須</span></h5>
+            <input [ngModel]="user.name3" name="name3" class="form-control" type="text" placeholder="お名前" #name3 (blur)="inputCheck(name1.value, name2.value, name3.value)">
           </div>
         </div>
       </div>
       <div class="col-6">
         <div class="card text-white bg-secondary">
           <div class="card-body">
-            <h5 class="card-title">Player14</h5>
+            <h5 class="card-title">Player4</h5>
             <input [ngModel]="user.name4" name="name4" class="form-control" type="text" placeholder="お名前">
           </div>
         </div>
@@ -67,9 +67,23 @@
     </div>
     <br>
     <div class="row">
+      <div class="col-12">
+        <div class="card text-white bg-secondary">
+          <div class="card-body">
+            <h5 class="card-title">IN/OUT <span class="badge bg-danger">必須</span></h5>
+            <select class="form-select form-select-sm" [(ngModel)]='user.inout' name="inout" id="inout">
+              <option value=0>OUT → IN</option>
+              <option value=1>IN → OUT</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
       <div class="col-4"></div>
       <div class="col-4 d-grid gap-2">
-        <button class="btn btn-primary btn-block" type="submit" data-bs-toggle="modal" data-bs-target="#saveDialog">プレイ開始</button>
+        <button class="btn btn-primary btn-block" type="submit" [disabled]="validate" data-bs-toggle="modal" data-bs-target="#saveDialog">プレイ開始</button>
       </div>
       <div class="col-4"></div>
     </div>
