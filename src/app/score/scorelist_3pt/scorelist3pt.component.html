@@ -7,7 +7,6 @@
           <td class="text-center"><small>{{ score.name1 }}</small></td>
           <td class="text-center"><small>{{ score.name2 }}</small></td>
           <td class="text-center"><small>{{ score.name3 }}</small></td>
-          <td class="text-center"><small>{{ score.name4 }}</small></td>
         </tr>
       </thead>
       <tbody>
@@ -50,19 +49,6 @@
                 <div *ngIf="order[0][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{ order[0][2] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course1_score4 }}
-                <div *ngIf="order[0][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[0][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -115,19 +101,6 @@
               </button>
             </div>
           </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course2_score4 }}
-                <div *ngIf="order[1][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[1][3] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
         </tr>
         <tr>
           <th scope="row" class="d-grid gap-2">
@@ -168,19 +141,6 @@
                 <div *ngIf="order[2][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{ order[2][2] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course3_score4 }}
-                <div *ngIf="order[2][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[2][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -233,19 +193,6 @@
               </button>
             </div>
           </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course4_score4 }}
-                <div *ngIf="order[3][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[3][3] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
         </tr>
         <tr>
           <th scope="row" class="d-grid gap-2">
@@ -286,19 +233,6 @@
                 <div *ngIf="order[4][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{ order[4][2] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course5_score4 }}
-                <div *ngIf="order[4][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[4][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -351,19 +285,6 @@
               </button>
             </div>
           </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course6_score4 }}
-                <div *ngIf="order[5][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[5][3] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
         </tr>
         <tr>
           <th scope="row" class="d-grid gap-2">
@@ -404,19 +325,6 @@
                 <div *ngIf="order[6][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{ order[6][2] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course7_score4 }}
-                <div *ngIf="order[6][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[6][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -469,19 +377,6 @@
               </button>
             </div>
           </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course8_score4 }}
-                <div *ngIf="order[7][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[7][3] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
         </tr>
         <tr>
           <th scope="row" class="d-grid gap-2">
@@ -528,19 +423,6 @@
               </button>
             </div>
           </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course9_score4 }}
-                <div *ngIf="order[8][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[8][3] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
         </tr>
         <tr class="bg-info text-white">
           <th scope="row">
@@ -549,7 +431,6 @@
           <td class="text-center">Score: {{ outTotal1 }}</td>
           <td class="text-center">Score: {{ outTotal2 }}</td>
           <td class="text-center">Score: {{ outTotal3 }}</td>
-          <td class="text-center">Score: {{ outTotal4 }}</td>
         </tr>
         <br>
         <tr>
@@ -591,19 +472,6 @@
                 <div *ngIf="order[9][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{ order[9][2] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course10_score4 }}
-                <div *ngIf="order[9][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[9][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -656,19 +524,6 @@
               </button>
             </div>
           </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course11_score4 }}
-                <div *ngIf="order[10][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[10][3] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
         </tr>
         <tr>
           <th scope="row" class="d-grid gap-2">
@@ -709,19 +564,6 @@
                 <div *ngIf="order[11][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{ order[11][2] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course12_score4 }}
-                <div *ngIf="order[11][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[11][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -774,19 +616,6 @@
               </button>
             </div>
           </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course13_score4 }}
-                <div *ngIf="order[12][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[12][3] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
         </tr>
         <tr>
           <th scope="row" class="d-grid gap-2">
@@ -827,19 +656,6 @@
                 <div *ngIf="order[13][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{ order[13][2] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course14_score4 }}
-                <div *ngIf="order[13][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[13][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -892,19 +708,6 @@
               </button>
             </div>
           </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course15_score4 }}
-                <div *ngIf="order[14][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[14][3] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
         </tr>
         <tr>
           <th scope="row" class="d-grid gap-2">
@@ -945,19 +748,6 @@
                 <div *ngIf="order[15][2] != 0">
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{ order[15][2] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course16_score4 }}
-                <div *ngIf="order[15][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[15][3] }}
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </div>
@@ -1010,19 +800,6 @@
               </button>
             </div>
           </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course17_score4 }}
-                <div *ngIf="order[16][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[16][3] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
         </tr>
         <tr>
           <th scope="row" class="d-grid gap-2">
@@ -1069,19 +846,6 @@
               </button>
             </div>
           </td>
-          <td class="text-center align-middle">
-            <div class="d-grid gap-2 col-8 mx-auto">
-              <button type="button" class="btn btn-light position-relative">
-                {{ score.course18_score4 }}
-                <div *ngIf="order[17][3] != 0">
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    {{ order[17][3] }}
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </div>
-              </button>
-            </div>
-          </td>
         </tr>
         <tr class="bg-info text-white">
           <th scope="row">
@@ -1090,7 +854,6 @@
           <td class="text-center">Score: {{ inTotal1 }}</td>
           <td class="text-center">Score: {{ inTotal2 }}</td>
           <td class="text-center">Score: {{ inTotal3 }}</td>
-          <td class="text-center">Score: {{ inTotal4 }}</td>
         </tr>
 
         <tr class="bg-success text-white">
@@ -1100,7 +863,6 @@
           <td class="text-center">Score: {{ total1 }}</td>
           <td class="text-center">Score: {{ total2 }}</td>
           <td class="text-center">Score: {{ total3 }}</td>
-          <td class="text-center">Score: {{ total4 }}</td>
         </tr>
       </tbody>
     </table>
@@ -1114,9 +876,6 @@
         <div class="col-4 text-end bg-secondary text-white">
           <small>OLYMPIC TOTAL</small>
         </div>
-        <div class="col-4 text-end bg-secondary text-white">
-          <small>LASVEGAS TOTAL</small>
-        </div>
       </div>
       <div class="row">
         <div class="col-4 text-center bg-secondary text-white">
@@ -1127,12 +886,6 @@
         </div>
         <div class="col-2 text-end">
           <small>({{ olympicTotal1_rated }})</small>
-        </div>
-        <div class="col-2 text-end">
-          {{ lasvegasTotal1 }}
-        </div>
-        <div class="col-2 text-end">
-          <small>({{ lasvegasTotal1_rated }})</small>
         </div>
       </div>
       <div class="row">
@@ -1145,12 +898,6 @@
         <div class="col-2 text-end">
           <small>({{ olympicTotal2_rated }})</small>
         </div>
-        <div class="col-2 text-end">
-          {{ lasvegasTotal2 }}
-        </div>
-        <div class="col-2 text-end">
-          <small>({{ lasvegasTotal2_rated }})</small>
-        </div>
       </div>
       <div class="row">
         <div class="col-4 text-center bg-secondary text-white">
@@ -1161,29 +908,6 @@
         </div>
         <div class="col-2 text-end">
           <small>({{ olympicTotal3_rated }})</small>
-        </div>
-        <div class="col-2 text-end">
-          {{ lasvegasTotal3 }}
-        </div>
-        <div class="col-2 text-end">
-          <small>({{ lasvegasTotal3_rated }})</small>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4 text-center bg-secondary text-white">
-          {{ score.name4 }}
-        </div>
-        <div class="col-2 text-end">
-          {{ olympicTotal4 }}
-        </div>
-        <div class="col-2 text-end">
-          <small>({{ olympicTotal4_rated }})</small>
-        </div>
-        <div class="col-2 text-end">
-          {{ lasvegasTotal4 }}
-        </div>
-        <div class="col-2 text-end">
-          <small>({{ lasvegasTotal4_rated }})</small>
         </div>
       </div>
       <div class="row mb-4">
@@ -1196,19 +920,12 @@
             (blur)="olympicRateChange(box1.value)"
             >
         </div>
-        <div class="col-4 text-end">
-          <input #box2 type="number" class="form-control form-control-sm" placeholder="レート"
-            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
-            (blur)="lasvegasRateChange(box2.value)"
-            >
-        </div>
       </div>
       <br>
       <div class="row fixed-bottom mb-3">
         <br>
         <div class="col-4"></div>
         <div class="col-4 d-grid gap-2">
-          <!-- <button class="btn btn-primary" type="submit">スコア保存</button> -->
           <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#saveDialog">
             スコア保存
           </button>
@@ -1430,74 +1147,6 @@
                 </div>
               </div>
             </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course1ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course1_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course1ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown1_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown1_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-                <select class="form-select form-select-sm" [(ngModel)]='order1_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngOrder1_4()">
-                  <option value=0>打順</option>
-                  <option value=1>1</option>
-                  <option value=2>2</option>
-                  <option value=3>3</option>
-                  <option value=4>4</option>
-                </select>
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn1_4' type="radio" name="radioBtn1_4_1" id="radioBtn1_4_1" [value]=0 (ngModelChange)="cngRdioBtn1_4()">
-                  <label class="form-check-label" for="radioBtn1_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn1_4' type="radio" name="radioBtn1_4_1" id="radioBtn1_4_2" [value]=1 (ngModelChange)="cngRdioBtn1_4()">
-                  <label class="form-check-label" for="radioBtn1_4_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
           <br>
           <div class="container">
@@ -1699,67 +1348,6 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" [(ngModel)]='radioBtn2_3' type="radio" name="radioBtn2_3_1" id="radioBtn2_3_2" [value]=1 (ngModelChange)="cngRdioBtn2_3()">
                   <label class="form-check-label" for="radioBtn2_3_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course2ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course2_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course2ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown2_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown2_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn2_4' type="radio" name="radioBtn2_4_1" id="radioBtn2_4_1" [value]=0 (ngModelChange)="cngRdioBtn2_4()">
-                  <label class="form-check-label" for="radioBtn2_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn2_4' type="radio" name="radioBtn2_4_1" id="radioBtn2_4_2" [value]=1 (ngModelChange)="cngRdioBtn2_4()">
-                  <label class="form-check-label" for="radioBtn2_4_2">
                     <small>Team B</small>
                   </label>
                 </div>
@@ -1971,67 +1559,6 @@
                 </div>
               </div>
             </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course3ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course3_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course3ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown3_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown3_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn3_4' type="radio" name="radioBtn3_4_1" id="radioBtn3_4_1" [value]=0 (ngModelChange)="cngRdioBtn3_4()">
-                  <label class="form-check-label" for="radioBtn3_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn3_4' type="radio" name="radioBtn3_4_1" id="radioBtn3_4_2" [value]=1 (ngModelChange)="cngRdioBtn3_4()">
-                  <label class="form-check-label" for="radioBtn3_4_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
           <br>
           <div class="container">
@@ -2233,67 +1760,6 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" [(ngModel)]='radioBtn4_3' type="radio" name="radioBtn4_3_1" id="radioBtn4_3_2" [value]=1 (ngModelChange)="cngRdioBtn4_3()">
                   <label class="form-check-label" for="radioBtn4_3_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course4ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course4_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course4ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown4_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown4_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn4_4' type="radio" name="radioBtn4_4_1" id="radioBtn4_4_1" [value]=0 (ngModelChange)="cngRdioBtn4_4()">
-                  <label class="form-check-label" for="radioBtn4_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn4_4' type="radio" name="radioBtn4_4_1" id="radioBtn4_4_2" [value]=1 (ngModelChange)="cngRdioBtn4_4()">
-                  <label class="form-check-label" for="radioBtn4_4_2">
                     <small>Team B</small>
                   </label>
                 </div>
@@ -2505,67 +1971,6 @@
                 </div>
               </div>
             </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course5ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course5_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course5ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown5_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown5_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn5_4' type="radio" name="radioBtn5_4_1" id="radioBtn5_4_1" [value]=0 (ngModelChange)="cngRdioBtn5_4()">
-                  <label class="form-check-label" for="radioBtn5_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn5_4' type="radio" name="radioBtn5_4_1" id="radioBtn5_4_2" [value]=1 (ngModelChange)="cngRdioBtn5_4()">
-                  <label class="form-check-label" for="radioBtn5_4_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
           <br>
           <div class="container">
@@ -2767,67 +2172,6 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" [(ngModel)]='radioBtn6_3' type="radio" name="radioBtn6_3_1" id="radioBtn6_3_2" [value]=1 (ngModelChange)="cngRdioBtn6_3()">
                   <label class="form-check-label" for="radioBtn6_3_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course6ScoreCountDown_User4()">
-                    DOWN
-                </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course6_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course6ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown6_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown6_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn6_4' type="radio" name="radioBtn6_4_1" id="radioBtn6_4_1" [value]=0 (ngModelChange)="cngRdioBtn6_4()">
-                  <label class="form-check-label" for="radioBtn6_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn6_4' type="radio" name="radioBtn6_4_1" id="radioBtn6_4_2" [value]=1 (ngModelChange)="cngRdioBtn6_4()">
-                  <label class="form-check-label" for="radioBtn6_4_2">
                     <small>Team B</small>
                   </label>
                 </div>
@@ -3039,67 +2383,6 @@
                 </div>
               </div>
             </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course7ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course7_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course7ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown7_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown7_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn7_4' type="radio" name="radioBtn7_4_1" id="radioBtn7_4_1" [value]=0 (ngModelChange)="cngRdioBtn7_4()">
-                  <label class="form-check-label" for="radioBtn7_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn7_4' type="radio" name="radioBtn7_4_1" id="radioBtn7_4_2" [value]=1 (ngModelChange)="cngRdioBtn7_4()">
-                  <label class="form-check-label" for="radioBtn7_4_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
           <br>
           <div class="container">
@@ -3301,67 +2584,6 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" [(ngModel)]='radioBtn8_3' type="radio" name="radioBtn8_3_1" id="radioBtn8_3_2" [value]=1 (ngModelChange)="cngRdioBtn8_3()">
                   <label class="form-check-label" for="radioBtn8_3_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course8ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course8_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course8ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown8_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown8_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn8_4' type="radio" name="radioBtn8_4_1" id="radioBtn8_4_1" [value]=0 (ngModelChange)="cngRdioBtn8_4()">
-                  <label class="form-check-label" for="radioBtn8_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn8_4' type="radio" name="radioBtn8_4_1" id="radioBtn8_4_2" [value]=1 (ngModelChange)="cngRdioBtn8_4()">
-                  <label class="form-check-label" for="radioBtn8_4_2">
                     <small>Team B</small>
                   </label>
                 </div>
@@ -3573,67 +2795,6 @@
                 </div>
               </div>
             </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course9ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course9_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course9ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown9_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown9_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn9_4' type="radio" name="radioBtn9_4_1" id="radioBtn9_4_1" [value]=0 (ngModelChange)="cngRdioBtn9_4()">
-                  <label class="form-check-label" for="radioBtn9_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn9_4' type="radio" name="radioBtn9_4_1" id="radioBtn9_4_2" [value]=1 (ngModelChange)="cngRdioBtn9_4()">
-                  <label class="form-check-label" for="radioBtn9_4_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
           <br>
           <div class="container">
@@ -3835,67 +2996,6 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" [(ngModel)]='radioBtn10_3' type="radio" name="radioBtn10_3_1" id="radioBtn10_3_2" [value]=1 (ngModelChange)="cngRdioBtn10_3()">
                   <label class="form-check-label" for="radioBtn10_3_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course10ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course10_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course10ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown10_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown10_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn10_4' type="radio" name="radioBtn10_4_1" id="radioBtn10_4_1" [value]=0 (ngModelChange)="cngRdioBtn10_4()">
-                  <label class="form-check-label" for="radioBtn10_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn10_4' type="radio" name="radioBtn10_4_1" id="radioBtn10_4_2" [value]=1 (ngModelChange)="cngRdioBtn10_4()">
-                  <label class="form-check-label" for="radioBtn10_4_2">
                     <small>Team B</small>
                   </label>
                 </div>
@@ -4107,67 +3207,6 @@
                 </div>
               </div>
             </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course11ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course11_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course11ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown11_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown11_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn11_4' type="radio" name="radioBtn11_4_1" id="radioBtn11_4_1" [value]=0 (ngModelChange)="cngRdioBtn11_4()">
-                  <label class="form-check-label" for="radioBtn11_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn11_4' type="radio" name="radioBtn11_4_1" id="radioBtn11_4_2" [value]=1 (ngModelChange)="cngRdioBtn11_4()">
-                  <label class="form-check-label" for="radioBtn11_4_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
           <br>
           <div class="container">
@@ -4369,67 +3408,6 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" [(ngModel)]='radioBtn12_3' type="radio" name="radioBtn12_3_1" id="radioBtn12_3_2" [value]=1 (ngModelChange)="cngRdioBtn12_3()">
                   <label class="form-check-label" for="radioBtn12_3_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course12ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course12_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course12ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown12_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown12_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn12_4' type="radio" name="radioBtn12_4_1" id="radioBtn12_4_1" [value]=0 (ngModelChange)="cngRdioBtn12_4()">
-                  <label class="form-check-label" for="radioBtn12_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn12_4' type="radio" name="radioBtn12_4_1" id="radioBtn12_4_2" [value]=1 (ngModelChange)="cngRdioBtn12_4()">
-                  <label class="form-check-label" for="radioBtn12_4_2">
                     <small>Team B</small>
                   </label>
                 </div>
@@ -4641,67 +3619,6 @@
                 </div>
               </div>
             </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course13ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course13_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course13ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown13_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown13_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn13_4' type="radio" name="radioBtn13_4_1" id="radioBtn13_4_1" [value]=0 (ngModelChange)="cngRdioBtn13_4()">
-                  <label class="form-check-label" for="radioBtn13_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn13_4' type="radio" name="radioBtn13_4_1" id="radioBtn13_4_2" [value]=1 (ngModelChange)="cngRdioBtn13_4()">
-                  <label class="form-check-label" for="radioBtn13_4_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
           <br>
           <div class="container">
@@ -4903,67 +3820,6 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" [(ngModel)]='radioBtn14_3' type="radio" name="radioBtn14_3" id="radioBtn14_3_2" [value]=1 (ngModelChange)="cngRdioBtn14_3()">
                   <label class="form-check-label" for="radioBtn14_3_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course14ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course14_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course14ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown14_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown14_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn14_4' type="radio" name="radioBtn14_4" id="radioBtn14_4_1" [value]=0 (ngModelChange)="cngRdioBtn14_4()">
-                  <label class="form-check-label" for="radioBtn14_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn14_4' type="radio" name="radioBtn14_4" id="radioBtn14_4_2" [value]=1 (ngModelChange)="cngRdioBtn14_4()">
-                  <label class="form-check-label" for="radioBtn14_4_2">
                     <small>Team B</small>
                   </label>
                 </div>
@@ -5175,67 +4031,6 @@
                 </div>
               </div>
             </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course15ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course15_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course15ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown15_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown15_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn15_4' type="radio" name="radioBtn15_4" id="radioBtn15_4_1" [value]=0 (ngModelChange)="cngRdioBtn15_4()">
-                  <label class="form-check-label" for="radioBtn15_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn15_4' type="radio" name="radioBtn15_4" id="radioBtn15_4_2" [value]=1 (ngModelChange)="cngRdioBtn15_4()">
-                  <label class="form-check-label" for="radioBtn15_4_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
           <br>
           <div class="container">
@@ -5437,67 +4232,6 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" [(ngModel)]='radioBtn16_3' type="radio" name="radioBtn16_3" id="radioBtn16_3_2" [value]=1 (ngModelChange)="cngRdioBtn16_3()">
                   <label class="form-check-label" for="radioBtn16_3_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course16ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course16_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course16ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown16_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown16_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn16_4' type="radio" name="radioBtn16_4" id="radioBtn16_4_1" [value]=0 (ngModelChange)="cngRdioBtn16_4()">
-                  <label class="form-check-label" for="radioBtn16_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn16_4' type="radio" name="radioBtn16_4" id="radioBtn16_4_2" [value]=1 (ngModelChange)="cngRdioBtn16_4()">
-                  <label class="form-check-label" for="radioBtn16_4_2">
                     <small>Team B</small>
                   </label>
                 </div>
@@ -5709,67 +4443,6 @@
                 </div>
               </div>
             </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course17ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course17_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course17ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown17_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown17_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn17_4' type="radio" name="radioBtn17_4" id="radioBtn17_4_1" [value]=0 (ngModelChange)="cngRdioBtn17_4()">
-                  <label class="form-check-label" for="radioBtn17_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn17_4' type="radio" name="radioBtn17_4" id="radioBtn17_4_2" [value]=1 (ngModelChange)="cngRdioBtn17_4()">
-                  <label class="form-check-label" for="radioBtn17_4_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
           <br>
           <div class="container">
@@ -5971,67 +4644,6 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" [(ngModel)]='radioBtn18_3' type="radio" name="radioBtn18_3" id="radioBtn18_3_2" [value]=1 (ngModelChange)="cngRdioBtn18_3()">
                   <label class="form-check-label" for="radioBtn18_3_2">
-                    <small>Team B</small>
-                  </label>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                <p><small>{{ score.name4 }}</small></p>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course18ScoreCountDown_User4()">
-                    DOWN
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <h2 class="text-center">{{ score.course18_score4 }}</h2>
-              </div>
-              <div class="col-3">
-                <div class="d-grid">
-                  <div class="btn btn-success" role="button" (click)="course18ScoreCountUp_User4()">
-                    UP
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                OLYMPIC
-              </div>
-              <div class="col-6 mb-2">
-                <select class="form-select form-select-sm" [(ngModel)]='dropDown18_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngDropDown18_4()">
-                  <option value=0>---</option>
-                  <option value=5>DIAMOND</option>
-                  <option value=4>GOLD</option>
-                  <option value=3>SILVER</option>
-                  <option value=2>BRONZE</option>
-                  <option value=1>IRON</option>
-                </select>
-              </div>
-            </div>
-            <div class="row border-bottom pb-2">
-              <div class="col-3">
-              </div>
-              <div class="col-3 d-flex align-items-center justify-content-center">
-                LASVEGAS
-              </div>
-              <div class="col-6">
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn18_4' type="radio" name="radioBtn18_4" id="radioBtn18_4_1" [value]=0 (ngModelChange)="cngRdioBtn18_4()">
-                  <label class="form-check-label" for="radioBtn18_4_1">
-                    <small>Team A</small>
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" [(ngModel)]='radioBtn18_4' type="radio" name="radioBtn18_4" id="radioBtn18_4_2" [value]=1 (ngModelChange)="cngRdioBtn18_4()">
-                  <label class="form-check-label" for="radioBtn18_4_2">
                     <small>Team B</small>
                   </label>
                 </div>
