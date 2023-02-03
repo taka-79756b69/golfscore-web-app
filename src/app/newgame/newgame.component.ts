@@ -43,6 +43,9 @@ export class NewgameComponent {
 
     //alert("保存を開始します。「保存完了」が表示されるまで待ってください。")
     this.saving = true
+    //MongoDBの仕様で、日付の保存時にISODate型かつUTC保存するため、日付がずれてしまうため
+    //9時間プラスして保存する
+    form.value.playDate = form.value.playDate.setHours(form.value.playDate.getHours() + 9)
 
     if(form.value.name1 != ''){
       this.player++

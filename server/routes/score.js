@@ -3,7 +3,8 @@ const score = require('../model/score')
 const router = express.Router()
 
 router.get('', function(req, res) {
-  score.find({}, function(err, foundScore) {
+  //score.find({}, function(err, foundScore) {
+  score.find({}).sort({$natural: -1}).exec(function(err, foundScore) {
     return res.json(foundScore)
   })
 })
