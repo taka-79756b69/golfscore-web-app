@@ -1,7 +1,7 @@
 <div *ngIf="score">
   <form (ngSubmit)="onSubmit()">
     <table class="table table-sm">
-      <thead>
+      <thead class="sticky-top table-secondary">
         <tr>
           <td class="text-center">#</td>
           <td class="text-center"><small>{{ score.name1 }}</small></td>
@@ -12,7 +12,7 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row" class="d-grid gap-2">
+          <th scope="row" class="d-grid gap-2 mt-2">
             <button type="button" class="btn btn-primary btn-block mt-1" data-bs-toggle="modal" data-bs-target="#course1Modal">
               {{ score.course1_no }}
             </button>
