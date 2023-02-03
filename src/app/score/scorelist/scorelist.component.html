@@ -1261,6 +1261,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <select class="form-select form-select-sm" [(ngModel)]='order1_1' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngOrder1_1()">
+                  <option value=0>打順</option>
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                </select>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -1278,13 +1285,6 @@
             </div>
             <div class="row border-bottom pb-2">
               <div class="col-3">
-                <select class="form-select form-select-sm" [(ngModel)]='order1_1' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngOrder1_1()">
-                  <option value=0>打順</option>
-                  <option value=1>1</option>
-                  <option value=2>2</option>
-                  <option value=3>3</option>
-                  <option value=4>4</option>
-                </select>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 LASVEGAS
@@ -1329,6 +1329,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <select class="form-select form-select-sm" [(ngModel)]='order1_2' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngOrder1_2()">
+                  <option value=0>打順</option>
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                </select>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -1346,13 +1353,6 @@
             </div>
             <div class="row border-bottom pb-2">
               <div class="col-3">
-                <select class="form-select form-select-sm" [(ngModel)]='order1_2' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngOrder1_2()">
-                  <option value=0>打順</option>
-                  <option value=1>1</option>
-                  <option value=2>2</option>
-                  <option value=3>3</option>
-                  <option value=4>4</option>
-                </select>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 LASVEGAS
@@ -1397,6 +1397,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <select class="form-select form-select-sm" [(ngModel)]='order1_3' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngOrder1_3()">
+                  <option value=0>打順</option>
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                </select>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -1414,13 +1421,6 @@
             </div>
             <div class="row border-bottom pb-2">
               <div class="col-3">
-                <select class="form-select form-select-sm" [(ngModel)]='order1_3' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngOrder1_3()">
-                  <option value=0>打順</option>
-                  <option value=1>1</option>
-                  <option value=2>2</option>
-                  <option value=3>3</option>
-                  <option value=4>4</option>
-                </select>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 LASVEGAS
@@ -1465,6 +1465,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <select class="form-select form-select-sm" [(ngModel)]='order1_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngOrder1_4()">
+                  <option value=0>打順</option>
+                  <option value=1>1</option>
+                  <option value=2>2</option>
+                  <option value=3>3</option>
+                  <option value=4>4</option>
+                </select>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -1482,13 +1489,6 @@
             </div>
             <div class="row border-bottom pb-2">
               <div class="col-3">
-                <select class="form-select form-select-sm" [(ngModel)]='order1_4' name="dropdownOption" id="dropdownOption" (ngModelChange)="cngOrder1_4()">
-                  <option value=0>打順</option>
-                  <option value=1>1</option>
-                  <option value=2>2</option>
-                  <option value=3>3</option>
-                  <option value=4>4</option>
-                </select>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 LASVEGAS
@@ -1567,6 +1567,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[1][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[1][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -1628,6 +1635,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[1][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[1][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -1689,6 +1703,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[1][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[1][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -1750,6 +1771,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[1][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[1][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -1845,6 +1873,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[2][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[2][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -1906,6 +1941,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[2][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[2][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -1967,6 +2009,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[2][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[2][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2028,6 +2077,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[2][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[2][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2123,6 +2179,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[3][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[3][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2184,6 +2247,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[3][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[3][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2245,6 +2315,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[3][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[3][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2306,6 +2383,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[3][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[3][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2401,6 +2485,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[4][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[4][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2462,6 +2553,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[4][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[4][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2523,6 +2621,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[4][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[4][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2584,6 +2689,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[4][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[4][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2679,6 +2791,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[5][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[5][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2740,6 +2859,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[5][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[5][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2801,6 +2927,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[5][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[5][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2862,6 +2995,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[5][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[5][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -2957,6 +3097,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[6][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[6][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3018,6 +3165,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[6][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[6][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3079,6 +3233,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[6][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[6][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3140,6 +3301,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[6][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[6][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3235,6 +3403,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[7][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[7][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3296,6 +3471,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[7][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[7][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3357,6 +3539,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[7][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[7][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3418,6 +3607,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[7][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[7][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3513,6 +3709,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[8][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[8][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3574,6 +3777,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[8][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[8][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3635,6 +3845,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[8][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[8][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3696,6 +3913,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[8][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[8][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3791,6 +4015,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[9][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[9][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3852,6 +4083,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[9][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[9][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3913,6 +4151,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[9][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[9][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -3974,6 +4219,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[9][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[9][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4069,6 +4321,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[10][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[10][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4130,6 +4389,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[10][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[10][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4191,6 +4457,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[10][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[10][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4252,6 +4525,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[10][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[10][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4347,6 +4627,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[11][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[11][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4408,6 +4695,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[11][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[11][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4469,6 +4763,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[11][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[11][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4530,6 +4831,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[11][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[11][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4625,6 +4933,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[12][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[12][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4686,6 +5001,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[12][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[12][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4747,6 +5069,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[12][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[12][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4808,6 +5137,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[12][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[12][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4903,6 +5239,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[13][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[13][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -4964,6 +5307,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[13][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[13][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5025,6 +5375,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[13][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[13][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5086,6 +5443,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[13][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[13][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5181,6 +5545,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[14][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[14][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5242,6 +5613,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[14][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[14][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5303,6 +5681,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[14][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[14][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5364,6 +5749,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[14][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[14][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5459,6 +5851,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[15][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[15][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5520,6 +5919,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[15][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[15][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5581,6 +5987,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[15][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[15][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5642,6 +6055,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[15][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[15][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5737,6 +6157,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[16][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[16][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5798,6 +6225,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[16][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[16][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5859,6 +6293,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[16][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[16][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -5920,6 +6361,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[16][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[16][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -6015,6 +6463,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[17][0] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[17][0] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -6076,6 +6531,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[17][1] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[17][1] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -6137,6 +6599,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[17][2] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[17][2] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
@@ -6198,6 +6667,13 @@
             </div>
             <div class="row">
               <div class="col-3">
+                <div *ngIf="order[17][3] != 0">
+                  <div class="d-grid">
+                    <div class="btn btn-secondary btn-sm" role="button">
+                      <small>打順 : {{ order[17][3] }}</small>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center">
                 OLYMPIC
