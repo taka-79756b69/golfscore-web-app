@@ -1,8 +1,6 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { ScoreService } from 'src/app/common/service/score.service';
 import { Component } from '@angular/core';
-import { ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
-import { EventListenerFocusTrapInertStrategy } from '@angular/cdk/a11y';
 
 @Component({
   selector: 'app-scorelisttop',
@@ -32,20 +30,16 @@ export class ScorelisttopComponent {
 
     const scoreListObservable = this.scoreService.getScoreList()
 
-    scoreListObservable.subscribe(
-      (data)=>{
+    scoreListObservable.subscribe({
+      next: (data) =>{
         this.scorelist = data
         this.setDataList(data)
-        //console.log('got data: '+ data)
-        //console.log("一覧はとれてる")
       },
-      (err)=>{
-        //console.log('got err: '+ err)
+      error: (e) =>{
       },
-      ()=>{
-        //console.log('complete!')
+      complete: () =>{
       }
-    )
+    })
   }
 
   //新規保存
@@ -54,21 +48,15 @@ export class ScorelisttopComponent {
 
     const scoreObservable = this.scoreService.deleteScore(this.deleteTrget)
 
-    scoreObservable.subscribe(
-      (data)=>{
-        //console.log('got data: '+ JSON.stringify(data))
-        //this.router.navigate(["score"])
+    scoreObservable.subscribe({
+      next: (data) =>{
         this.confflag = false
       },
-      (err)=>{
-        //console.log('got err: '+ err)
+      error: (e) =>{
       },
-      ()=>{
-        //console.log("保存完了")
-        //alert("削除しました")
-        //this.getScoreLists()
+      complete: () =>{
       }
-    )
+    })
   }
 
   setConfFlag(trget: any) {

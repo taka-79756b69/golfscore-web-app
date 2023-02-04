@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ScoreService } from '../common/service/score.service';
-import { MatDatepickerModule } from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-home',

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { withLatestFrom } from 'rxjs';
 import { ScoreService } from 'src/app/common/service/score.service';
 
 @Component({
@@ -330,19 +329,19 @@ export class ScorelistComponent {
 
       const scoreObservable = this.scoreService.getScore(params.get("scoreId")!)
 
-      scoreObservable.subscribe(
-        (data)=>{
+      scoreObservable.subscribe({
+        next: (data) =>{
           this.score = data
           //console.log('got data: '+ data)
         },
-        (err)=>{
+        error: (err) =>{
           console.log('got err: '+ err)
         },
-        ()=>{
+        complete: () =>{
           //console.log('complete!')
           this.initDataSet()
         }
-      )
+      })
     })
   }
 
@@ -1378,19 +1377,19 @@ export class ScorelistComponent {
 
       const scoreObservable = this.scoreService.saveScore(params.get("scoreId")!, this.checkoutForm)
 
-      scoreObservable.subscribe(
-        (data)=>{
+      scoreObservable.subscribe({
+        next: (data) =>{
           this.score = data
         },
-        (err)=>{
+        error: (err) =>{
           console.log('got err: '+ err)
         },
-        ()=>{
+        complete: () =>{
           this.saving = false
           this.ngOnInit()
           //alert("「保存完了」しました。")
         }
-      )
+      })
     })
   }
 
