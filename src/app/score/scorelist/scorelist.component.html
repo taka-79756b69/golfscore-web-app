@@ -1346,97 +1346,222 @@
         <div class="col-3 text-center bg-secondary text-white">
           <small>{{ score.name1 }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal1 >= 0 ? 'blue' : 'red'
+        }">
           <small>{{ olympicTotal1 }}</small>
         </div>
         <div class="visually-hidden">
-          <small>({{ olympicTotal1_rated }})</small>
+          <small>{{ olympicTotal1_rated }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : lasvegasTotal1 >= 0 ? 'blue' : 'red'
+        }">
           <small>{{ lasvegasTotal1 }}</small>
         </div>
         <div class="visually-hidden">
-          <small>({{ lasvegasTotal1_rated }})</small>
+          <small>{{ lasvegasTotal1_rated }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
-          <small>({{ olympicTotal1_rated + lasvegasTotal1_rated }})</small>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal1 + lasvegasTotal1 >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal1 + lasvegasTotal1 }}</small>
         </div>
       </div>
       <div class="row">
         <div class="col-3 text-center bg-secondary text-white">
           <small>{{ score.name2 }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal2 >= 0 ? 'blue' : 'red'
+        }">
           <small>{{ olympicTotal2 }}</small>
         </div>
         <div class="visually-hidden">
-          <small>({{ olympicTotal2_rated }})</small>
+          <small>{{ olympicTotal2_rated }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : lasvegasTotal2 >= 0 ? 'blue' : 'red'
+        }">
           <small>{{ lasvegasTotal2 }}</small>
         </div>
         <div class="visually-hidden">
-          <small>({{ lasvegasTotal2_rated }})</small>
+          <small>{{ lasvegasTotal2_rated }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
-          <small>({{ olympicTotal2_rated + lasvegasTotal2_rated }})</small>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal2 + lasvegasTotal2 >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal2 + lasvegasTotal2 }}</small>
         </div>
       </div>
       <div class="row">
         <div class="col-3 text-center bg-secondary text-white">
           <small>{{ score.name3 }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal3 >= 0 ? 'blue' : 'red'
+        }">
           <small>{{ olympicTotal3 }}</small>
         </div>
         <div class="visually-hidden">
-          <small>({{ olympicTotal3_rated }})</small>
+          <small>{{ olympicTotal3_rated }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : lasvegasTotal3 >= 0 ? 'blue' : 'red'
+        }">
           <small>{{ lasvegasTotal3 }}</small>
         </div>
         <div class="visually-hidden">
-          <small>({{ lasvegasTotal3_rated }})</small>
+          <small>{{ lasvegasTotal3_rated }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
-          <small>({{ olympicTotal3_rated + lasvegasTotal3_rated }})</small>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal3 + lasvegasTotal3 >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal3 + lasvegasTotal3 }}</small>
         </div>
       </div>
       <div class="row">
         <div class="col-3 text-center bg-secondary text-white">
           <small>{{ score.name4 }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal4 >= 0 ? 'blue' : 'red'
+        }">
           <small>{{ olympicTotal4 }}</small>
         </div>
         <div class="visually-hidden">
-          <small>({{ olympicTotal4_rated }})</small>
+          <small>{{ olympicTotal4_rated }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : lasvegasTotal4 >= 0 ? 'blue' : 'red'
+        }">
           <small>{{ lasvegasTotal4 }}</small>
         </div>
         <div class="visually-hidden">
-          <small>({{ lasvegasTotal4_rated }})</small>
+          <small>{{ lasvegasTotal4_rated }}</small>
         </div>
-        <div class="col-3 text-end border border-white">
-          <small>({{ olympicTotal4_rated + lasvegasTotal4_rated }})</small>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal4 + lasvegasTotal4 >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal4 + lasvegasTotal4 }}</small>
         </div>
       </div>
-      <div class="row mb-4">
-        <div class="col-3 d-flex align-items-center justify-content-center bg-secondary text-white">
+      <div class="row mt-1 mb-1">
+        <div class="col">
+        </div>
+        <div class="col-2 text-end mt-1">
           <small>レート</small>
         </div>
         <div class="col-3 text-end">
-          <input #box1 type="number" class="form-control form-control-sm" placeholder="レート"
-            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
-            (blur)="olympicRateChange(box1.value)"
-            >
+          <span>
+            <input #box1 type="number" class="form-control form-control-sm" placeholder="レート"
+              aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+              (blur)="olympicAndLasvegasRateChange(box1.value)">
+          </span>
+          <div class="visually-hidden">
+            <small>{{ rateValue }}</small>
+          </div>
         </div>
-        <div class="col-3 text-end">
-          <input #box2 type="number" class="form-control form-control-sm" placeholder="レート"
-            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
-            (blur)="lasvegasRateChange(box2.value)"
-            >
+        <div class="col">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center bg-secondary text-white">
+          <small>RESULT (After Rate)</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 text-center bg-secondary text-white ">
+          <small>#</small>
+        </div>
+        <div class="col-3 text-center bg-secondary text-white">
+          <small><span class="badge bg-danger">A</span><br>OLYMPIC</small>
+        </div>
+        <div class="col-3 text-center bg-secondary text-white">
+          <small><span class="badge bg-primary">B</span><br>LASVEGAS</small>
+        </div>
+        <div class="col-3 text-center bg-secondary text-white">
+          <small><span class="badge bg-danger">A</span>+<span class="badge bg-primary">B</span><br>TOTAL</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 text-center bg-secondary text-white">
+          <small>{{ score.name1 }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal1_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal1_rated }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : lasvegasTotal1_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ lasvegasTotal1_rated }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal1_rated + lasvegasTotal1_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal1_rated + lasvegasTotal1_rated }}</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 text-center bg-secondary text-white">
+          <small>{{ score.name2 }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal2_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal2_rated }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : lasvegasTotal2_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ lasvegasTotal2_rated }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal2_rated + lasvegasTotal2_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal2_rated + lasvegasTotal2_rated }}</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 text-center bg-secondary text-white">
+          <small>{{ score.name3 }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal3_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal3_rated }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : lasvegasTotal3_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ lasvegasTotal3_rated }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal3_rated + lasvegasTotal3_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal3_rated + lasvegasTotal3_rated }}</small>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-3 text-center bg-secondary text-white">
+          <small>{{ score.name4 }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal4_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal4_rated }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : lasvegasTotal4_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ lasvegasTotal4_rated }}</small>
+        </div>
+        <div class="col-3 text-end border border-white" [ngStyle] = "{
+          'color' : olympicTotal4_rated + lasvegasTotal4_rated >= 0 ? 'blue' : 'red'
+        }">
+          <small>{{ olympicTotal4_rated + lasvegasTotal4_rated }}</small>
         </div>
       </div>
       <br>

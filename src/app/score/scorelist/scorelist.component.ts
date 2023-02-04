@@ -66,6 +66,8 @@ export class ScorelistComponent {
   lasvegasTotal3_rated = 0
   lasvegasTotal4_rated = 0
 
+  rateValue = 0
+
   //オーダーバッジ
   order = [
     [0, 0, 0, 0],
@@ -363,6 +365,7 @@ export class ScorelistComponent {
 
     this.setOlympicTotal()
     this.setLasvegasTotal()
+    this.setOlympicAndLasvegasAfterRate()
     this.setBadgeOrder()
   }
 
@@ -2438,20 +2441,30 @@ export class ScorelistComponent {
       this.score.course18_score4++
   }
 
-  olympicRateChange(val: any) {
+  olympicAndLasvegasRateChange(val: any) {
 
+    this.rateValue = val
     this.olympicTotal1_rated = this.olympicTotal1 * val
     this.olympicTotal2_rated = this.olympicTotal2 * val
     this.olympicTotal3_rated = this.olympicTotal3 * val
     this.olympicTotal4_rated = this.olympicTotal4 * val
-  }
-
-  lasvegasRateChange(val: any) {
-
     this.lasvegasTotal1_rated = this.lasvegasTotal1 * val
     this.lasvegasTotal2_rated = this.lasvegasTotal2 * val
     this.lasvegasTotal3_rated = this.lasvegasTotal3 * val
     this.lasvegasTotal4_rated = this.lasvegasTotal4 * val
+
+  }
+
+  setOlympicAndLasvegasAfterRate() {
+
+    this.olympicTotal1_rated = this.olympicTotal1 * this.rateValue
+    this.olympicTotal2_rated = this.olympicTotal2 * this.rateValue
+    this.olympicTotal3_rated = this.olympicTotal3 * this.rateValue
+    this.olympicTotal4_rated = this.olympicTotal4 * this.rateValue
+    this.lasvegasTotal1_rated = this.lasvegasTotal1 * this.rateValue
+    this.lasvegasTotal2_rated = this.lasvegasTotal2 * this.rateValue
+    this.lasvegasTotal3_rated = this.lasvegasTotal3 * this.rateValue
+    this.lasvegasTotal4_rated = this.lasvegasTotal4 * this.rateValue
 
   }
 
