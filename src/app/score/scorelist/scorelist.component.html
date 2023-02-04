@@ -1324,95 +1324,115 @@
     <!--  -->
     <div class="container">
       <div class="row">
-        <div class="col-4 text-center bg-secondary text-white">
+        <div class="col-12 text-center bg-secondary text-white">
+          <small>RESULT</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 text-center bg-secondary text-white">
           <small>#</small>
         </div>
-        <div class="col-4 text-end bg-secondary text-white">
-          <small>OLYMPIC TOTAL</small>
+        <div class="col-3 text-end bg-secondary text-white">
+          <small>OLYMPIC<span class="badge bg-danger">A</span></small>
         </div>
-        <div class="col-4 text-end bg-secondary text-white">
-          <small>LASVEGAS TOTAL</small>
+        <div class="col-3 text-end bg-secondary text-white">
+          <small>LASVEGAS<span class="badge bg-primary">B</span></small>
+        </div>
+        <div class="col-3 text-end bg-secondary text-white">
+          <small><span class="badge bg-danger">A</span>+<span class="badge bg-primary">B</span></small>
         </div>
       </div>
       <div class="row">
-        <div class="col-4 text-center bg-secondary text-white">
-          {{ score.name1 }}
+        <div class="col-3 text-center bg-secondary text-white">
+          <small>{{ score.name1 }}</small>
         </div>
-        <div class="col-2 text-end">
-          {{ olympicTotal1 }}
+        <div class="col-3 text-end" style="width: 12.499999995%">
+          <small>{{ olympicTotal1 }}</small>
         </div>
-        <div class="col-2 text-end">
+        <div class="col-3 text-end" style="width: 12.499999995%">
           <small>({{ olympicTotal1_rated }})</small>
         </div>
-        <div class="col-2 text-end">
-          {{ lasvegasTotal1 }}
+        <div class="col-3 text-end" style="width: 12.499999995%">
+          <small>{{ lasvegasTotal1 }}</small>
         </div>
-        <div class="col-2 text-end">
+        <div class="col-3 text-end" style="width: 12.499999995%">
           <small>({{ lasvegasTotal1_rated }})</small>
         </div>
+        <div class="col-3 text-end">
+          <small>({{ olympicTotal1_rated + lasvegasTotal1_rated }})</small>
+        </div>
       </div>
       <div class="row">
-        <div class="col-4 text-center bg-secondary text-white">
-          {{ score.name2 }}
+        <div class="col-3 text-center bg-secondary text-white">
+          <small>{{ score.name2 }}</small>
         </div>
-        <div class="col-2 text-end">
-          {{ olympicTotal2 }}
+        <div class="col-3 text-end" style="width: 12.499999995%">
+          <small>{{ olympicTotal2 }}</small>
         </div>
-        <div class="col-2 text-end">
+        <div class="col-3 text-end" style="width: 12.499999995%">
           <small>({{ olympicTotal2_rated }})</small>
         </div>
-        <div class="col-2 text-end">
-          {{ lasvegasTotal2 }}
+        <div class="col-3 text-end" style="width: 12.499999995%">
+          <small>{{ lasvegasTotal2 }}</small>
         </div>
-        <div class="col-2 text-end">
+        <div class="col-3 text-end" style="width: 12.499999995%">
           <small>({{ lasvegasTotal2_rated }})</small>
         </div>
+        <div class="col-3 text-end">
+          <small>({{ olympicTotal2_rated + lasvegasTotal2_rated }})</small>
+        </div>
       </div>
       <div class="row">
-        <div class="col-4 text-center bg-secondary text-white">
-          {{ score.name3 }}
+        <div class="col-3 text-center bg-secondary text-white">
+          <small>{{ score.name3 }}</small>
         </div>
-        <div class="col-2 text-end">
-          {{ olympicTotal3 }}
+        <div class="col-3 text-end" style="width: 12.499999995%">
+          <small>{{ olympicTotal3 }}</small>
         </div>
-        <div class="col-2 text-end">
+        <div class="col-3 text-end" style="width: 12.499999995%">
           <small>({{ olympicTotal3_rated }})</small>
         </div>
-        <div class="col-2 text-end">
-          {{ lasvegasTotal3 }}
+        <div class="col-3 text-end" style="width: 12.499999995%">
+          <small>{{ lasvegasTotal3 }}</small>
         </div>
-        <div class="col-2 text-end">
+        <div class="col-3 text-end" style="width: 12.499999995%">
           <small>({{ lasvegasTotal3_rated }})</small>
+        </div>
+        <div class="col-3 text-end">
+          <small>({{ olympicTotal3_rated + lasvegasTotal3_rated }})</small>
         </div>
       </div>
       <div class="row">
-        <div class="col-4 text-center bg-secondary text-white">
-          {{ score.name4 }}
+        <div class="col-3 text-center bg-secondary text-white">
+          <small>{{ score.name4 }}</small>
         </div>
-        <div class="col-2 text-end">
-          {{ olympicTotal4 }}
+        <div class="col-3 text-end" style="width: 12.499999995%">
+          <small>{{ olympicTotal4 }}</small>
         </div>
-        <div class="col-2 text-end">
+        <div class="col-3 text-end" style="width: 12.499999995%">
           <small>({{ olympicTotal4_rated }})</small>
         </div>
-        <div class="col-2 text-end">
-          {{ lasvegasTotal4 }}
+        <div class="col-3 text-end" style="width: 12.499999995%">
+          <small>{{ lasvegasTotal4 }}</small>
         </div>
-        <div class="col-2 text-end">
+        <div class="col-3 text-end" style="width: 12.499999995%">
           <small>({{ lasvegasTotal4_rated }})</small>
+        </div>
+        <div class="col-3 text-end">
+          <small>({{ olympicTotal4_rated + lasvegasTotal4_rated }})</small>
         </div>
       </div>
       <div class="row mb-4">
-        <div class="col-4 d-flex align-items-center justify-content-center bg-secondary text-white">
-          レート
+        <div class="col-3 d-flex align-items-center justify-content-center bg-secondary text-white">
+          <small>レート</small>
         </div>
-        <div class="col-4 text-end">
+        <div class="col-3 text-end">
           <input #box1 type="number" class="form-control form-control-sm" placeholder="レート"
             aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
             (blur)="olympicRateChange(box1.value)"
             >
         </div>
-        <div class="col-4 text-end">
+        <div class="col-3 text-end">
           <input #box2 type="number" class="form-control form-control-sm" placeholder="レート"
             aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
             (blur)="lasvegasRateChange(box2.value)"
