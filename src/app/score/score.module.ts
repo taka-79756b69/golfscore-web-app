@@ -10,6 +10,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { Scorelist3ptComponent } from './scorelist_3pt/scorelist3pt.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 const routes: Routes = [
   {
@@ -39,7 +41,9 @@ const routes: Routes = [
     CommonModule,
     ReactiveFormsModule,
     MatProgressSpinnerModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [
     ScoreService

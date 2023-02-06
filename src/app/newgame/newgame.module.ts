@@ -1,3 +1,4 @@
+import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -27,14 +28,15 @@ const routes: Routes = [
     MatDatepickerModule,
     MatInputModule,
     MatNativeDateModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
   ],
   exports: [
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [
     ScoreService,
