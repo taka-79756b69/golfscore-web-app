@@ -9,6 +9,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker'
 import { NewgameComponent } from './newgame.component'
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { ScoreComponent } from '../score/score.component';
 
@@ -29,7 +30,8 @@ const routes: Routes = [
     MatInputModule,
     MatNativeDateModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    MatSelectModule
   ],
   exports: [
     MatDatepickerModule,

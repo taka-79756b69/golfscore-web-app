@@ -33,16 +33,16 @@ export class ScorelisttopComponent {
     scoreListObservable.subscribe({
       next: (data) =>{
         this.scorelist = data
-        this.setDataList(data)
       },
       error: (e) =>{
       },
       complete: () =>{
+        this.setDataList(this.scorelist)
       }
     })
   }
 
-  //新規保存
+  //データ削除
   //deleteData(deleteId: any) {
   deleteData() {
 
@@ -50,11 +50,11 @@ export class ScorelisttopComponent {
 
     scoreObservable.subscribe({
       next: (data) =>{
-        this.confflag = false
       },
       error: (e) =>{
       },
       complete: () =>{
+        this.confflag = false
       }
     })
   }
@@ -66,10 +66,12 @@ export class ScorelisttopComponent {
   }
 
   reload() {
+    this.listArray = new Array()
     this.getScoreLists()
   }
 
   setDataList(lists: any) {
+
     for (let list of lists){
       this.listArray.push(list._id)
     }

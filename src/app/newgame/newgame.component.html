@@ -1,86 +1,84 @@
 <br>
 <form #form=ngForm (ngSubmit)="onSubmit(form)">
+  <table class="table table-borderless">
+    <tr>
+      <td>
+        <h3>Player1 <span class="badge bg-danger">必須</span></h3>
+      </td>
+      <td>
+        <mat-form-field>
+          <mat-label>Player1</mat-label>
+          <input matInput required placeholder="氏名" [ngModel]="user.name1" name="name1" class="form-control" #name1 (blur)="inputCheck(name1.value, name2.value, name3.value)">
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Player2 <span class="badge bg-danger">必須</span></h3>
+      </td>
+      <td>
+        <mat-form-field>
+          <mat-label>Player2</mat-label>
+          <input matInput required placeholder="氏名" [ngModel]="user.name2" name="name2" class="form-control" #name2 (blur)="inputCheck(name1.value, name2.value, name3.value)">
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Player3 <span class="badge bg-danger">必須</span></h3>
+      </td>
+      <td>
+        <mat-form-field>
+          <mat-label>Player3</mat-label>
+          <input matInput required placeholder="氏名" [ngModel]="user.name3" name="name3" class="form-control" #name3 (blur)="inputCheck(name1.value, name2.value, name3.value)">
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>Player4</h3>
+      </td>
+      <td>
+        <mat-form-field>
+          <mat-label>Player4</mat-label>
+          <input matInput placeholder="氏名" [ngModel]="user.name4" name="name4" class="form-control">
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td><h3>Date</h3></td>
+      <td>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Choose a date</mat-label>
+          <input [ngModel]="user.playDate" name="playDate" matInput [matDatepicker]="picker">
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker touchUi #picker></mat-datepicker>
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td><h3>Course Name</h3></td>
+      <td>
+        <mat-form-field style="width: 100%;">
+          <mat-label>Course Name</mat-label>
+          <input matInput placeholder="コース名" [ngModel]="user.courseName" name="courseName" class="form-control">
+        </mat-form-field>
+      </td>
+    </tr>
+    <tr>
+      <td><h3>IN/OUT <span class="badge bg-danger">必須</span></h3></td>
+      <td>
+        <mat-form-field>
+          <mat-label>Course Root</mat-label>
+          <mat-select [(ngModel)]="user.inout" name="inout" id="inout" appearance="fill">
+            <mat-option [value]=0>OUT → IN</mat-option>
+            <mat-option [value]=1>IN → OUT</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </td>
+    </tr>
+  </table>
   <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <div class="card text-white bg-secondary">
-          <div class="card-body">
-            <h5 class="card-title">Player1 <span class="badge bg-danger">必須</span></h5>
-            <input [ngModel]="user.name1" name="name1" class="form-control" type="text" placeholder="お名前" #name1 (blur)="inputCheck(name1.value, name2.value, name3.value)">
-          </div>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="card text-white bg-secondary">
-          <div class="card-body">
-            <h5 class="card-title">Player2 <span class="badge bg-danger">必須</span></h5>
-            <input [ngModel]="user.name2" name="name2" class="form-control" type="text" placeholder="お名前" #name2 (blur)="inputCheck(name1.value, name2.value, name3.value)">
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-6">
-        <div class="card text-white bg-secondary">
-          <div class="card-body">
-            <h5 class="card-title">Player3 <span class="badge bg-danger">必須</span></h5>
-            <input [ngModel]="user.name3" name="name3" class="form-control" type="text" placeholder="お名前" #name3 (blur)="inputCheck(name1.value, name2.value, name3.value)">
-          </div>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="card text-white bg-secondary">
-          <div class="card-body">
-            <h5 class="card-title">Player4</h5>
-            <input [ngModel]="user.name4" name="name4" class="form-control" type="text" placeholder="お名前">
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-12">
-        <div class="card text-white bg-secondary">
-          <div class="card-body">
-            <h5 class="card-title">Date</h5>
-            <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label>Choose a date</mat-label>
-              <input [ngModel]="user.playDate" name="playDate" matInput [matDatepicker]="picker">
-              <mat-hint>YYYY/MM/DD</mat-hint>
-              <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-              <mat-datepicker touchUi #picker></mat-datepicker>
-            </mat-form-field>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-12">
-        <div class="card text-white bg-secondary">
-          <div class="card-body">
-            <h5 class="card-title">Course Name</h5>
-            <input [ngModel]="user.courseName" name="courseName" class="form-control" type="text" placeholder="コース名">
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-12">
-        <div class="card text-white bg-secondary">
-          <div class="card-body">
-            <h5 class="card-title">IN/OUT <span class="badge bg-danger">必須</span></h5>
-            <select class="form-select form-select-sm" [(ngModel)]='user.inout' name="inout" id="inout">
-              <option value=0>OUT → IN</option>
-              <option value=1>IN → OUT</option>
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
     <div class="row">
       <div class="col-4"></div>
       <div class="col-4 d-grid gap-2">
