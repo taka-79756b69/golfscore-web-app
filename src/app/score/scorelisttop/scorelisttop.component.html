@@ -30,11 +30,15 @@
             <div>
               <span class="float-start">
                 <a routerLink="{{ tmp.player }}/{{ tmp._id }}">
-                  <div class="btn btn-primary">スコア表示</div>
+                  <div class="btn btn-primary">
+                    <i class="material-icons small-size">auto_stories</i> スコア表示
+                  </div>
                 </a>
               </span>
               <span class="float-end">
-                <div class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="setConfFlag(i)">データ削除</div>
+                <div class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="setConfFlag(i)">
+                  <i class="material-icons small-size">delete</i> データ削除
+                </div>
               </span>
             </div>
           </div>
