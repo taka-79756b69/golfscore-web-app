@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { ScoreService } from 'src/app/common/service/score.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-scorelist',
@@ -67,6 +68,8 @@ export class ScorelistComponent {
   lasvegasTotal4_rated = 0
 
   rateValue = 0
+
+  validate = true
 
   //オーダーバッジ
   order = [
@@ -319,6 +322,7 @@ export class ScorelistComponent {
     private activatedRoute: ActivatedRoute,
     private scoreService: ScoreService,
     private formBuilder: FormBuilder,
+    private _snackBar: MatSnackBar
     ){
 
     }
@@ -348,7 +352,6 @@ export class ScorelistComponent {
   }
 
   save() {
-
     // changes.prop contains the old and the new value...
     this.outTotal1 = this.setOutTotal1()
     this.inTotal1 = this.setInTotal1()
@@ -970,6 +973,7 @@ export class ScorelistComponent {
     this.setOlympicTotal()
     this.setLasvegasTotal()
     this.setBadgeOrder()
+    this.checkOrder()
   }
 
   //スコア合計をセット
@@ -1382,14 +1386,14 @@ export class ScorelistComponent {
 
       scoreObservable.subscribe({
         next: (data) =>{
-          this.score = data
+          //this.score = data
         },
         error: (err) =>{
           console.log('got err: '+ err)
         },
         complete: () =>{
           this.saving = false
-          this.ngOnInit()
+          //this.ngOnInit()
           //alert("「保存完了」しました。")
         }
       })
@@ -1617,15 +1621,31 @@ export class ScorelistComponent {
   //最初のコースは手で順番を入れる必要がある
   cngOrder1_1() {
     this.course1_order1 = this.order1_1
+    this.checkOrder()
   }
   cngOrder1_2() {
     this.course1_order2 = this.order1_2
+    this.checkOrder()
   }
   cngOrder1_3() {
     this.course1_order3 = this.order1_3
+    this.checkOrder()
   }
   cngOrder1_4() {
     this.course1_order4 = this.order1_4
+    this.checkOrder()
+  }
+
+  checkOrder() {
+
+    this.validate = true
+    if (( +this.order1_1 +
+         +this.order1_2 +
+         +this.order1_3 + +this.order1_4) != 10) {
+      //error
+    } else {
+      this.validate = false
+    }
   }
 
   //ラジオボタンの変更イベント
